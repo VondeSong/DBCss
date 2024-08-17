@@ -83,6 +83,7 @@ html[data-theme="light"] h1.title {
   word-break: break-word;
   letter-spacing: 4px !important;
   font-variation-settings: "wght" 750;
+
 }
 
 html[data-theme="dark"] h1.title {
@@ -95,6 +96,8 @@ html[data-theme="dark"] h1.title {
   word-break: break-word;
   letter-spacing: 4px !important;
   font-variation-settings: "wght" 750;
+ 
+  
 }
 
 /*标题编辑模式*/
@@ -172,6 +175,7 @@ html[data-theme="light"] .editor-inner .uniline-block.h1 {
   font-family: var(--font-title-default);
   font-style: normal ;
   letter-spacing: var(--title-letter-spacing);
+  margin-top: .9rem !important;
 }
 
 
@@ -190,6 +194,7 @@ html[data-theme="dark"] .editor-inner .uniline-block.h1 {
   font-family: var(--font-title-default);
   font-style: normal ;
   letter-spacing: var(--title-letter-spacing);
+    margin-top: .9rem !important;
 }
 
 html[data-theme="light"] .ls-block h2,
@@ -206,6 +211,7 @@ html[data-theme="light"] .editor-inner .uniline-block.h2 {
   font-family: var(--font-title-default);
   font-style: normal ;
   letter-spacing: var(--title-letter-spacing);
+  margin-top: .7rem !important;
 }
 
 html[data-theme="dark"] .ls-block h2,
@@ -222,6 +228,7 @@ html[data-theme="dark"] .editor-inner .uniline-block.h2 {
   font-family: var(--font-title-default);
   font-style: normal ;
   letter-spacing: var(--title-letter-spacing);
+  margin-top: .7rem !important;
 }
 
 html[data-theme="light"] .ls-block h3,
@@ -237,6 +244,7 @@ html[data-theme="light"] .editor-inner .uniline-block.h3 {
   font-family: var(--font-title-default);
   font-style: normal ;
   letter-spacing: var(--title-letter-spacing);
+  margin-top: .23rem !important;
 }
 
 html[data-theme="dark"] .ls-block h3,
@@ -252,6 +260,7 @@ html[data-theme="dark"] .editor-inner .uniline-block.h3 {
   font-family: var(--font-title-default);
   font-style: normal ;
   letter-spacing: var(--title-letter-spacing);
+  margin-top: .23rem !important;
 }
 
 html[data-theme="light"] .ls-block h4,
