@@ -1,0 +1,53 @@
+﻿/*系统 提醒按钮*/
+html[data-theme="dark"] .ui__button[intent=logseq],
+html[data-theme="dark"] .ui__notifications .notification-area {
+  background: linear-gradient(116deg, rgba(40, 42, 43, 0.85), rgba(34, 36, 37, 0.85));
+  backdrop-filter: saturate(1.5) blur(32px);
+  box-shadow: rgba(244, 244, 244, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 12px 24px -4px, rgba(0, 0, 0, 0.08) 0px 8px 16px -4px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+html[data-theme="dark"] .ui__notifications .notification-area:hover,
+html[data-theme="dark"] .ui__button[intent=logseq]:hover {
+  background: rgba(244, 244, 244, 0.09);
+  backdrop-filter: saturate(1.5) blur(32px);
+  box-shadow: rgba(244, 244, 244, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 12px 24px -4px, rgba(0, 0, 0, 0.08) 0px 8px 16px -4px;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+html[data-theme="light"] .ui__button[intent=logseq].shadow-lg,
+html[data-theme="light"] .ui__notifications .notification-area.shadow-lg {
+  background: linear-gradient(116deg, rgba(250, 250, 250, 0.85), rgba(244, 244, 244, 0.85));
+  backdrop-filter: saturate(1.5) blur(32px);
+  box-shadow: rgba(31, 34, 37, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 12px 24px -4px, rgba(0, 0, 0, 0.04) 0px 8px 16px -4px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+html[data-theme="light"] .ui__notifications .notification-area:hover,
+html[data-theme="light"] .ui__button[intent=logseq]:hover {
+  background: linear-gradient(116deg, rgba(250, 250, 250, 0.85), rgba(244, 244, 244, 0.85));
+  backdrop-filter: saturate(1.5) blur(32px);
+  box-shadow: rgba(31, 34, 37, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 12px 24px -4px, rgba(0, 0, 0, 0.04) 0px 8px 16px -4px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*官方插件页面*/
+html[data-theme="light"] .cp__plugins-item-card {
+  --ls-secondary-background-color: rgb(235, 234, 242,.4);
+}
+
+html[data-theme="light"] .cp__plugins-item-card.market.installed {
+  opacity: .7;
+}
+
+/*搜索框的位置*/
+@media (min-width: 640px) {
+  .ui__modal[label="ls-modal-search"] {
+    top: calc(var(--ls-headbar-height) + var(--ls-headbar-inner-top-padding) + 180px) !important;
+  }
+}
