@@ -1,0 +1,113 @@
+﻿ /*双链 引用*/
+ .page-reference:hover {
+  background-color: transparent !important;
+ }
+/*双链*/
+html[data-theme="light"] a.page-ref:not(.block-properties a.page-ref, a[data-ref^="mon,"],a[data-ref^="thu,"],a[data-ref^="wed,"],a[data-ref^="tue,"],a[data-ref^="fri,"],a[data-ref^="sat,"],a[data-ref^="sun,"]) {
+  /*color: rgb(16, 85, 146);*/
+  color: inherit !important;
+    border-bottom: 3px solid rgba(11, 101, 181, 0.25);
+    margin: 0 1px;
+}
+html[data-theme="dark"] a.page-ref:not(.block-properties a.page-ref, a[data-ref^="mon,"],a[data-ref^="thu,"],a[data-ref^="wed,"],a[data-ref^="tue,"],a[data-ref^="fri,"],a[data-ref^="sat,"],a[data-ref^="sun,"]) {
+ /*color: rgb(151, 228, 255);*/
+ color: inherit !important;
+  border-bottom: 3px solid rgba(117, 219, 255, 0.5);
+  margin: 0 1px;
+}
+/*page-hierarchy 底部页面标签 下面的a.page-ref 去掉标签底部边框*/
+.page-hierarchy a.page-ref,.page-tags a.page-ref{
+  border-bottom: 0 !important;
+}
+
+/*[data-tooltipped] .page-ref { 
+  border-bottom: 0 !important;
+}*/
+
+/*底部 引用 非引用 命名空间 可折叠标题 去掉下划线*/
+.foldable-title .page-ref {
+  border-bottom: 0 !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/*页面底部的 hierarchy 和 引用链接 未引用链接 页面标签的标题颜色*/
+html[data-theme="light"] .page-hierarchy h2,.page-tags h2,.page-linked h2,.page-unlinked h2{
+  font-size: 17px;
+    font-weight: 600;
+    color: rgb(143, 145, 146) !important;
+    opacity: 1;
+}
+html[data-theme="dark"] .page-hierarchy h2,.page-tags h2,.page-linked h2,.page-unlinked h2{
+  font-size: 17px;
+    font-weight: 600;
+    color: rgb(145, 145, 145);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    opacity: 1;
+}
+/*仅仅是标签的图标*/
+a.tag::before{
+  opacity: .8;
+}
+html[data-theme="light"] a.tag {
+  color: #A7B6C2 !important;
+  opacity: 1;
+  font-size: 1em;
+}
+html[data-theme="light"]:hover a.tag {
+  color: #A7B6C2 !important;
+  opacity: 1;
+  font-size: 1em;
+}
+html[data-theme="dark"] a.tag {
+  color: #8A9BA8 !important;
+  opacity: 1;
+  font-size: 1em;
+  
+}
+html[data-theme="dark"] a.tag:hover {
+  color: #8A9BA8 !important;
+  opacity: 1;
+  font-size: 1em; 
+}
+/*.references-blocks Linked Reference 中的标签不带阴影*/
+html[data-theme="light"] .references-blocks a.tag{
+  box-shadow: none !important;
+  color: rgb(144 155 163) !important;
+}
+html[data-theme="dark"] .references-blocks a.tag{
+  box-shadow: none !important;
+ /*color: #969494 !important;*/
+}
+.color-level.embed-page a.tag, .color-level.embed-block a.tag{
+  box-shadow: none !important;
+}
+
+/*引用*/
+html[data-theme="dark"] .page-ref {
+  /*border-bottom: 3px solid rgba(117, 219, 255, 0.5) !important;*/
+  cursor: pointer;
+}
+
+/*[[ ]]*/
+html[data-theme="dark"] .page-reference .bracket {
+  opacity: .4;
+}
+
+html[data-theme="dark"] .text-gray-500 {
+  color: rgb(117, 219, 255, 0.5) !important;
+}
+
+html[data-theme="dark"] .page-reference:hover {
+  background-color: transparent;
+  /*color: var(--ls-link-ref-text-color) !important;*/
+}
+
+html[data-theme="dark"] .page-ref:hover {
+  /*border-bottom: 3px solid rgba(117, 219, 255, 0.5) !important;*/
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--ls-link-ref-text-color) !important;
+}
