@@ -17,7 +17,10 @@ html[data-theme="light"] .ls-block :is(h1, h2, h3, h4, h5)::after {
   /*原始是0.3*/
   opacity: 0.3;
 }
-
+.editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2) {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;};
 html[data-theme="dark"] .ls-block :is(h1, h2, h3, h4, h5)::after {
   margin-left: 0.5rem;
   /* font-family: var(--ct-code-font-family);*/
