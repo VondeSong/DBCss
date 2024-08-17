@@ -3,13 +3,6 @@
     --title-line-height:1.2;
     --title-letter-spacing: 0.045em;
     }
-    .editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2){
-        margin-bottom: 0 !important; 
-        margin-top: .88rem;
-        padding-bottom: 0 !important;
-    }
-
-
     html[data-theme="light"] .ls-block :is(h1, h2, h3, h4, h5)::after {
       margin-left: 0.5rem;
       /* font-family: var(--ct-code-font-family);*/
