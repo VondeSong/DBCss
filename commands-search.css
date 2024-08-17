@@ -1,0 +1,467 @@
+﻿/*commands block-commands block-search page-search*/
+html[data-theme="light"] [data-modal-name="commands"],
+html[data-theme="light"] [data-modal-name="block-commands"],
+html[data-theme="light"] [data-modal-name="block-search"],
+html[data-theme="light"] [data-modal-name="page-search"] {
+  background: linear-gradient(116deg, rgba(250, 250, 250, 1), rgba(244, 244, 244, 1));
+  backdrop-filter: saturate(1.5) blur(32px);
+  box-shadow: rgba(31, 34, 37, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 12px 24px -4px, rgba(0, 0, 0, 0.04) 0px 8px 16px -4px;
+  border-radius: 8px;
+  overflow: hidden;
+  pointer-events: auto;
+  padding: 5px;
+  overflow: auto;
+  scroll-padding-top: 8px;
+  scroll-padding-bottom: 16px;
+  border-color:transparent !important;
+}
+
+html[data-theme="dark"] [data-modal-name="commands"],
+html[data-theme="dark"] [data-modal-name="block-commands"],
+html[data-theme="dark"] [data-modal-name="block-search"],
+html[data-theme="dark"] [data-modal-name="page-search"] {
+  background: linear-gradient(116deg, rgba(40, 42, 43, 0.85), rgba(34, 36, 37, 0.85));
+  backdrop-filter: saturate(1.5) blur(32px);
+  box-shadow: rgba(244, 244, 244, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 12px 24px -4px, rgba(0, 0, 0, 0.08) 0px 8px 16px -4px;
+  border-radius: 8px;
+  overflow: hidden;
+  pointer-events: auto;
+  padding: 5px;
+  overflow: auto;
+  scroll-padding-top: 8px;
+  scroll-padding-bottom: 16px;
+  border-color:transparent !important;
+}
+
+/*每一行之间的距离虽然和craft保持一致了，但是由于craft本身有图标，在logseq无图标的情况下，增加每块间距，更好看一点*/
+/*[data-modal-name="commands"],
+[data-modal-name="block-commands"],
+[data-modal-name="block-search"],
+[data-modal-name="page-search"] {
+  .menu-link-wrap {
+    margin-top: 2px;
+  }
+}*/
+
+/*[data-modal-name="block-search"],[data-modal-name="page-search"] {
+  padding: 8px !important;
+}*/
+/*menu-link-wrap 匹配到的结果中有高亮的 和没有高亮的高度 hover不同 被p标签默认line-height影响*/
+[data-modal-name="block-search"] .menu-link-wrap p,
+[data-modal-name="page-search"] .menu-link-wrap p {
+  line-height: 16px !important;
+}
+
+@media (min-width: 640px) {
+
+  .absolute-modal[data-modal-name=commands],
+  .absolute-modal[data-modal-name=select-code-block-mode] {
+    /*width: 280px !important;*/
+    width: 300px !important;
+    max-height: 288px !important;
+  }
+
+  .absolute-modal[data-modal-name=block-commands] {
+    width: 232px !important;
+    max-height: 288px !important;
+
+  }
+
+  /*pc端 搜索页面 一级搜索框 */
+  .absolute-modal[data-modal-name="page-search"]:not(:has(.menu-link-wrap)) {
+    padding: 0 !important;
+    width: 300px !important;
+
+  }
+
+  /*pc端 搜索页面 二级搜索框 */
+  .absolute-modal[data-modal-name=page-search] {
+    width: 380px !important;
+    padding: 8px 8px !important;
+    max-height: 400px !important;
+  }
+
+  /*pc端 搜索页面 二级搜索框 展示的每一个块内容的间距 不包括第一个*/
+  .absolute-modal[data-modal-name=page-search] .menu-link-wrap:not(:first-child) {
+    margin-top: 2px;
+  }
+
+  /*pc端 搜索块 一级搜索框 */
+  .absolute-modal[data-modal-name="block-search"]:not(:has(.menu-link-wrap)) {
+    padding: 5px !important;
+    width: 300px !important;
+  }
+
+  /*pc端 搜索块 二级搜索框 */
+  .absolute-modal[data-modal-name=block-search] {
+    width: 510px !important;
+    padding: 8px 8px !important;
+    max-height: 480px !important;
+
+  }
+
+  /*pc端 搜索块 二级搜索框 展示的每一个块内容的间距 不包括第一个*/
+  .absolute-modal[data-modal-name=block-search] .menu-link-wrap:not(:first-child) {
+    margin-top: 2px;
+  }
+
+  .absolute-modal[data-modal-name=block-search] .py-2 {
+    padding-bottom: 0.21rem;
+    padding-top: 0.15rem;
+  }
+}
+
+/*手机端 命令 块、页面搜索框*/
+@media (max-width: 640px) {
+  .absolute-modal[data-modal-name="page-search"]:not(:has(.menu-link-wrap)) {
+    padding: 0 !important;
+    width: 300px !important;
+  }
+
+  .absolute-modal[data-modal-name=page-search] {
+    width: 320px !important;
+    padding: 4px 4px !important;
+    max-height: 288px !important;
+  }
+
+  .absolute-modal[data-modal-name="block-search"]:not(:has(.menu-link-wrap)) {
+    padding: 5px !important;
+    width: 300px !important;
+  }
+
+  .absolute-modal[data-modal-name=block-search] {
+    width: 320px !important;
+    line-height: 16px !important;
+    padding: 4px 4px !important;
+    max-height: 288px !important;
+  }
+
+  .absolute-modal[data-modal-name=block-search] .py-2 {
+    padding-bottom: 0.21rem;
+    padding-top: 0.15rem;
+  }
+}
+
+/*搜索页面 新建页面和其他的结果无法上下对齐; class="m-0" 下面的*/
+/*有些问题，new page 跟新建名字间距会没*/
+/*[data-modal-name=page-search] .space-x-1>:not([hidden])~:not([hidden]) {
+  margin-left: 0;
+}*/
+
+/*搜索结果中没有图标和结果的元素，隐藏*/
+[label="ls-modal-search"] .menu-link-wrap:not(:has(.search-result)):not(:has(.font-medium)) {
+  /* styles */
+  display: none;
+}
+
+/*去掉组名*/
+[data-modal-name="commands"] .ui__ac-group-name {
+  display: none !important;
+}
+
+[data-modal-name="commands"].shadow-lg,
+[data-modal-name="block-commands"].shadow-lg {
+  --tw-shadow: none !important;
+  --tw-shadow-colored: none !important;
+}
+
+/*每个命令的字体大小*/
+/*html[data-theme="light"] [data-modal-name="commands"] .menu-link-wrap {
+  font-size: 20px !important;
+}
+html[data-theme="dark"] [data-modal-name="commands"] .menu-link-wrap {
+  font-size: 13px !important;
+  
+}*/
+
+html[data-theme="light"] [data-modal-name="commands"] .menu-link-wrap:hover,
+html[data-theme="light"] [data-modal-name="block-commands"] .menu-link-wrap:hover,
+html[data-theme="light"] [data-modal-name="block-search"] .menu-link-wrap:hover,
+html[data-theme="light"] [data-modal-name="page-search"] .menu-link-wrap:hover {
+  background: rgba(31, 34, 37, 0) !important;
+  color: rgba(31, 34, 37, 0.9) !important;
+  border-radius: 6px;
+  /*font-size: 20px !important;*/
+  transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, color, opacity;
+  font-weight: 500;
+  /*line-height: 16px !important;*/
+}
+
+html[data-theme="dark"] [data-modal-name="commands"] .menu-link-wrap:hover,
+html[data-theme="dark"] [data-modal-name="block-commands"] .menu-link-wrap:hover,
+html[data-theme="dark"] [data-modal-name="block-search"] .menu-link-wrap:hover,
+html[data-theme="dark"] [data-modal-name="page-search"] .menu-link-wrap:hover {
+  background: rgba(31, 34, 37, 0.05) !important;
+  color: rgba(244, 244, 244, 0.9) !important;
+  border-radius: 6px;
+  /*font-size: 20px !important;*/
+  transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, color, opacity;
+  font-weight: 500;
+  /*line-height: 16px !important;*/
+}
+
+html[data-theme="light"] [data-modal-name="commands"] .menu-link.chosen,
+html[data-theme="light"] [data-modal-name="block-commands"] .menu-link.chosen,
+html[data-theme="light"] [data-modal-name="block-search"] .menu-link.chosen,
+html[data-theme="light"] [data-modal-name="page-search"] .menu-link.chosen {
+ /*background: rgba(31, 34, 37, 0.035) !important;*/
+  background: rgba(31, 34, 37, 0.045) !important;
+  color: rgba(31, 34, 37, 0.9) !important;
+  border-radius: 6px;
+  transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, color, opacity;
+  /*letter-spacing: -0.04px;*/
+  /*line-height: 16px !important;*/
+  font-size: 13px !important;
+  font-weight: 500;
+}
+/*新版本 的主题颜色 导致各种边框重复 */
+/*html * {
+  border-color: transparent !important;
+}*/
+html[data-theme="dark"] [data-modal-name="commands"] .menu-link.chosen,
+html[data-theme="dark"] [data-modal-name="block-commands"] .menu-link.chosen,
+html[data-theme="dark"] [data-modal-name="block-search"] .menu-link.chosen,
+html[data-theme="dark"] [data-modal-name="page-search"] .menu-link.chosen {
+  background: rgba(244, 244, 244, 0.06) !important;
+  color: rgba(244, 244, 244, 0.9) !important;
+  border-radius: 6px;
+  transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, color, opacity;
+  /*letter-spacing: -0.04px;*/
+  /*line-height: 16px;*/
+  font-size: 13px !important;
+  font-weight: 500;
+ 
+}
+
+html[data-theme="light"] [data-modal-name="commands"] .menu-link-wrap .menu-link:not(.chosen),
+html[data-theme="light"] [data-modal-name="block-commands"] .menu-link-wrap .menu-link:not(.chosen),
+html[data-theme="light"] [data-modal-name="block-search"] .menu-link-wrap .menu-link:not(.chosen),
+html[data-theme="light"] [data-modal-name="page-search"] .menu-link-wrap .menu-link:not(.chosen) {
+  background-color: transparent !important;
+  background: rgba(31, 34, 37, 0) !important;
+  color: rgba(31, 34, 37, 0.9) !important;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum", "calt";
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  /*letter-spacing: -0.04px;*/
+  /*line-height: 16px !important;*/
+
+}
+
+html[data-theme="dark"] [data-modal-name="commands"] .menu-link-wrap .menu-link:not(.chosen),
+html[data-theme="dark"] [data-modal-name="block-commands"] .menu-link-wrap .menu-link:not(.chosen),
+html[data-theme="dark"] [data-modal-name="block-search"] .menu-link-wrap .menu-link:not(.chosen),
+html[data-theme="dark"] [data-modal-name="page-search"] .menu-link-wrap .menu-link:not(.chosen) {
+  background-color: transparent !important;
+  background: rgba(31, 34, 37, 0) !important;
+  color: rgba(244, 244, 244, 0.9) !important;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum", "calt";
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  /*letter-spacing: -0.04px;*/
+  /*line-height: 16px !important;*/
+}
+
+/*/命令的每一行的插件的图标*/
+[data-modal-name="commands"] .menu-link .ui__icon.ti.ls-icon-puzzle {
+  opacity: .35;
+}
+/*官方搜索框高亮*/
+html[data-theme="light"] .ui__modal[label="ls-modal-search"] .ui__list-item-highlighted-span {
+  background-color: rgba(255, 241, 0, 0.4);
+  box-shadow: rgba(255, 241, 0, 0.4) -1px 0px 0px, rgba(255, 241, 0, 0.4) 1px 0px 0px;
+  border-radius: 4px;
+ /*color: var(--ls-primary-text-color) !important;*/
+  padding: 0 1px !important;
+  /*margin-left: 2px !important;
+  margin-right: 2px !important;*/
+}
+html[data-theme="dark"] .ui__modal[label="ls-modal-search"] .ui__list-item-highlighted-span {
+  background-color: rgba(255, 244, 50, 0.4) !important;
+  box-shadow: rgba(255, 244, 50, 0.4) -1px 0px 0px, rgba(255, 244, 50, 0.4) 1px 0px 0px !important;
+  border-radius: 4px !important;
+  color: var(--ls-primary-text-color) !important;
+  padding: 0 1px !important;
+  /*margin-left: 2px !important;
+  margin-right: 2px !important;*/
+}
+/*官方搜索框 背景*/
+
+
+
+html[data-theme="light"] .ui__modal-panel {
+  background: linear-gradient(116deg, rgba(250, 250, 250, 0.85), rgba(244, 244, 244, 0.85)) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  pointer-events: auto;
+  /*backdrop-filter: saturate(1.5) blur(32px) !important;*/
+  backdrop-filter: saturate(1.5) blur(25px) !important;
+  --tw-shadow: none !important;
+  --tw-shadow-colored: none !important;
+  box-shadow: rgba(31, 34, 37, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 16px 40px -6px, rgba(0, 0, 0, 0.04) 0px 12px 24px -6px !important;
+  border: none !important;
+}
+
+html[data-theme="dark"] .ui__modal-panel {
+  /*background: linear-gradient(116deg, rgba(40, 42, 43, 0.85), rgba(34, 36, 37, 0.85));*/
+  background: linear-gradient(116deg, rgba(40, 42, 43, 0.85), rgba(34, 36, 37, 0.85));
+  border-radius: 8px !important;
+  overflow: hidden;
+  pointer-events: auto;
+  /*backdrop-filter: saturate(1.5) blur(32px) !important;*/
+  backdrop-filter: saturate(1.5) blur(32px) !important;
+  --tw-shadow: none !important;
+  --tw-shadow-colored: none !important;
+  box-shadow: rgba(244, 244, 244, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.24) 0px 16px 40px -6px, rgba(0, 0, 0, 0.06) 0px 12px 24px -6px;
+  border: none !important;
+}
+
+html[data-theme=dark][data-color=logseq] .cp__cmdk .border-gray-06, html[data-theme=dark][data-color=logseq] .cp__cmdk .border-gray-07 {
+opacity: .9 !important;
+}
+.ui__modal-panel .flex.flex-col.justify-start {
+  position: relative;
+}
+.bg-gray-02.border-b.border-1.border-gray-07::before {
+  font-size: 1rem;
+  position: absolute;
+  left: 24px;
+  top: 12px;
+  content: "\eb1c";
+  font-family: 'tabler-icons';
+}
+html[data-theme="light"] .ui__modal-panel input::placeholder {
+  color: rgba(31, 34, 37, 0.5) !important;
+  font-size: 13px;
+}
+
+html[data-theme="dark"] .ui__modal-panel input::placeholder {
+  color: rgba(244, 244, 244, 0.5) !important;
+  font-size: 13px;
+}
+.ui__modal[label="ls-modal-search"] .ui__modal-panel input {
+  padding-top: .6rem !important;
+  padding-bottom: .6rem !important;
+  padding-left: 3.2rem;
+  
+}
+.ui__modal-panel input.text-xl {
+  font-size: 1rem;
+}
+/*搜索框的大小*/
+.ui__modal-panel .max-w-4xl{
+  max-width: 44rem;
+}
+/*搜索结果*/
+.ui__modal-panel .\!opacity-75 {
+opacity: 1 !important;
+}
+.ui__modal-panel .flex.flex-col{
+  opacity: 1 !important;
+}
+/*图标颜色*/
+.ui__modal-panel .bg-gray-05{
+  background-color: transparent;
+}
+/*搜索框的下边框*/
+html[data-theme="light"] .ui__modal-panel .border-gray-07 {
+  border-color: rgba(31, 34, 37, 0.06);
+}
+html[data-theme="dark"] .ui__modal-panel .border-gray-07 {
+  border-color: rgba(244, 244, 244, 0.09);
+}
+html[data-theme="light"] .ui__modal-panel .border-gray-06 {
+  border-color: rgba(31, 34, 37, 0.06);
+}
+html[data-theme="dark"] .ui__modal-panel .border-gray-06 {
+  border-color: rgba(244, 244, 244, 0.09);
+}
+/*输入框*/
+html[data-theme="light"] .ls-search .input-wrap {
+  border-bottom: 1px solid rgba(31, 34, 37, 0.06) !important;
+ 
+}
+
+/*搜索结果 展示的导航栏的字体大小*/
+.search-results .text-xs {
+  font-size: 13px;
+}
+.ui__modal .bg-gray-02 {
+  background-color: inherit;
+}
+
+/*搜索结果主内容*/
+.search-results .text-gray-12 {
+  color: var(--ls-primary-text-color);
+}
+/*最下面一行的提示*/
+div.flex.w-full.px-3.py-2.gap-2.justify-between {
+
+}
+/*命令提示中间竖线*/
+.ui__button__tile-separator {
+  display: none;
+}
+div.flex.w-full.px-3.py-2.gap-2.justify-between .text-sm.leading-6 {
+  font-size: 11px;
+}
+div.flex.w-full.px-3.py-2.gap-2.justify-between .gap-2.hidden.md\:flex button{
+  font-size: 11px;
+}
+div.flex.w-full.px-3.py-2.gap-2.justify-between .gap-2.hidden.md\:flex button .ui__button-shortcut-key{
+  font-size: 11px;
+}
+/*选中块*/
+html[data-theme="light"] .search-results .bg-gray-03-alpha {
+  /*background: rgba(31, 34, 37, 0.06);*/
+  background-color: rgba(31, 34, 37, 0.06) !important;
+}
+html[data-theme="dark"] .search-results .bg-gray-03-alpha {
+  /*background: rgba(31, 34, 37, 0.06);*/
+ background-color: rgba(244, 244, 244, 0.09) !important;
+}
+
+html[data-theme="light"] .search-results div.flex.flex-col.gap-0\.5 {
+    cursor: pointer;
+    /*text-align: left;*/
+    background: rgba(31, 34, 37, 0.03);
+    /*color: rgb(31, 34, 37);*/
+    transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    padding: 8px 12px;
+    margin: 3px 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    /*line-height: 150%;*/
+    font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+html[data-theme="dark"] .search-results div.flex.flex-col.gap-0\.5 {
+    cursor: pointer;
+    /*text-align: left;*/
+    background: rgba(244, 244, 244, 0.05);
+    /*color: rgb(31, 34, 37);*/
+    transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    padding: 8px 12px;
+    margin: 3px 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    /*line-height: 150%;*/
+    font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+html[data-theme="light"] .search-results div.flex.flex-col.gap-0\.5:hover{
+   background: rgba(31, 34, 37, 0.06)  !important;
+   transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+html[data-theme="dark"] .search-results div.flex.flex-col.gap-0\.5:hover{
+  background: rgba(244, 244, 244, 0.09)  !important;
+  transition: background 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
