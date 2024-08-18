@@ -1,0 +1,64 @@
+﻿/*选择框的选中选项*/
+:root{
+    --checkColor: #1993ff;
+    --checkColorNot: #a5a7a8;
+    --DarkcheckColor: #2cb7e9;
+    --DarkcheckColorNot: #7a7a7a;
+}
+/*勾的颜色*/
+html[data-theme="light"]  .data-\[state\=checked\]\:text-primary-foreground[data-state=checked] {
+    color: white;
+}
+html[data-theme="light"] [data-state="checked"].border-primary{
+    background-color: var(--checkColor) !important;
+    
+}
+html[data-theme="light"] [data-state="checked"].border {
+    border-width: 1px !important;
+    border-color: var(--checkColor) !important;
+}
+/*未选中*/
+html[data-theme="light"] button[role=checkbox][data-state=unchecked]{
+    border-color: var(--checkColorNot);
+}
+html[data-theme="light"] button[role=checkbox][data-state=unchecked]{
+    border-width: 2px !important;
+}
+/*统计 顶部选中状态*/
+html[data-theme="light"] [data-state="indeterminate"].border-primary{
+    border-color: var(--checkColor) !important;
+}
+
+/*Dark选中选项，顶格状态显示*/
+html[data-theme="dark"]  .data-\[state\=checked\]\:text-primary-foreground[data-state=checked] {
+    color: #222222;
+}
+html[data-theme="dark"] [data-state="indeterminate"].border-primary{
+    border-color: var(--checkDarkcheckColorColor) !important;
+}
+html[data-theme="dark"] [data-state="indeterminate"].border {
+    border-width: 1px !important;
+}
+
+html[data-theme="dark"] [data-state="checked"].border-primary{
+    background-color: var(--DarkcheckColor) !important;
+    
+}
+html[data-theme="dark"] [data-state="checked"].border {
+    border-width: 1px !important;
+    border-color: var(--DarkcheckColor) !important;
+}
+/*未选中*/
+html[data-theme="dark"] button[role=checkbox][data-state=unchecked]{
+    border-color: var(--DarkcheckColorNot);
+}
+html[data-theme="dark"] button[role=checkbox][data-state=unchecked]{
+    border-width: 2px !important;
+}
+/*选中选项，顶格状态显示*/
+html[data-theme="dark"] [data-state="indeterminate"].border-primary{
+    border-color: var(--DarkcheckColor) !important;
+}
+[data-state="indeterminate"].border {
+    border-width: 1px !important;
+}
