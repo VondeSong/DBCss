@@ -1,0 +1,346 @@
+﻿/*自定义标签 日期*/
+:root {
+    /*白色主题 灰色*/
+    /*--19230045imageurl: url("https://api.onedrive.com/v1.0/shares/s!AlyPMEviU_SjhqBJ4oG8bMbqww3Qcg/root/content");*/
+    --19230045imageurl: url("data:image/svg+xml;utf8,%3Csvg%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M3.903%2023h16.194c1.306%200%202.283-.317%202.931-.95.648-.634.972-1.585.972-2.852V4.802c0-1.267-.324-2.218-.972-2.851C22.38%201.317%2021.403%201%2020.097%201H3.903c-1.296%200-2.27.317-2.923.95C.327%202.585%200%203.536%200%204.803v14.396c0%201.267.327%202.218.98%202.851.653.634%201.627.951%202.923.951Zm-.214-2.188c-.47%200-.834-.123-1.095-.37-.26-.246-.39-.616-.39-1.109V7.986c0-.493.13-.862.39-1.109.26-.246.625-.37%201.095-.37h16.607c.48%200%20.85.124%201.11.37.26.247.39.616.39%201.11v11.346c0%20.493-.13.863-.39%201.11-.26.246-.63.37-1.11.37H3.689Zm5.984-10.034h.705c.224%200%20.382-.043.474-.129.092-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.092-.086-.25-.128-.474-.128h-.705c-.224%200-.382.042-.474.128-.092.085-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.225%200%20.383-.043.475-.129.091-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.092-.086-.25-.128-.475-.128h-.704c-.224%200-.382.042-.474.128-.092.085-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.224%200%20.383-.043.474-.129.092-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.091-.086-.25-.128-.474-.128h-.704c-.225%200-.383.042-.475.128-.091.085-.137.239-.137.46v.694c0%20.222.046.375.137.46.092.086.25.129.475.129ZM5.74%2014.595h.704c.224%200%20.383-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.091-.086-.25-.129-.474-.129H5.74c-.225%200-.383.043-.475.128-.092.086-.137.24-.137.46v.695c0%20.221.045.375.137.46.092.086.25.128.475.128Zm3.933%200h.705c.224%200%20.382-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.092-.086-.25-.129-.474-.129h-.705c-.224%200-.382.043-.474.128-.092.086-.138.24-.138.46v.695c0%20.221.046.375.138.46.092.086.25.128.474.128Zm3.934%200h.704c.225%200%20.383-.042.475-.128.091-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.092-.086-.25-.129-.475-.129h-.704c-.224%200-.382.043-.474.128-.092.086-.138.24-.138.46v.695c0%20.221.046.375.138.46.092.086.25.128.474.128Zm3.934%200h.704c.224%200%20.383-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.091-.086-.25-.129-.474-.129h-.704c-.225%200-.383.043-.475.128-.091.086-.137.24-.137.46v.695c0%20.221.046.375.137.46.092.086.25.128.475.128ZM5.74%2018.413h.704c.224%200%20.383-.043.474-.128.092-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.091-.085-.25-.128-.474-.128H5.74c-.225%200-.383.043-.475.128-.092.086-.137.239-.137.46v.694c0%20.222.045.375.137.46.092.086.25.129.475.129Zm3.933%200h.705c.224%200%20.382-.043.474-.128.092-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.092-.085-.25-.128-.474-.128h-.705c-.224%200-.382.043-.474.128-.092.086-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.225%200%20.383-.043.475-.128.091-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.092-.085-.25-.128-.475-.128h-.704c-.224%200-.382.043-.474.128-.092.086-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Z'%20fill%3D'rgba(31%2C%2034%2C%2037%2C%200.65)'%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    /*白色主题 纯黑*/
+    --19230045i2mageurl: url("data:image/svg+xml;utf8,%3Csvg%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M3.903%2023h16.194c1.306%200%202.283-.317%202.931-.95.648-.634.972-1.585.972-2.852V4.802c0-1.267-.324-2.218-.972-2.851C22.38%201.317%2021.403%201%2020.097%201H3.903c-1.296%200-2.27.317-2.923.95C.327%202.585%200%203.536%200%204.803v14.396c0%201.267.327%202.218.98%202.851.653.634%201.627.951%202.923.951Zm-.214-2.188c-.47%200-.834-.123-1.095-.37-.26-.246-.39-.616-.39-1.109V7.986c0-.493.13-.862.39-1.109.26-.246.625-.37%201.095-.37h16.607c.48%200%20.85.124%201.11.37.26.247.39.616.39%201.11v11.346c0%20.493-.13.863-.39%201.11-.26.246-.63.37-1.11.37H3.689Zm5.984-10.034h.705c.224%200%20.382-.043.474-.129.092-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.092-.086-.25-.128-.474-.128h-.705c-.224%200-.382.042-.474.128-.092.085-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.225%200%20.383-.043.475-.129.091-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.092-.086-.25-.128-.475-.128h-.704c-.224%200-.382.042-.474.128-.092.085-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.224%200%20.383-.043.474-.129.092-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.091-.086-.25-.128-.474-.128h-.704c-.225%200-.383.042-.475.128-.091.085-.137.239-.137.46v.694c0%20.222.046.375.137.46.092.086.25.129.475.129ZM5.74%2014.595h.704c.224%200%20.383-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.091-.086-.25-.129-.474-.129H5.74c-.225%200-.383.043-.475.128-.092.086-.137.24-.137.46v.695c0%20.221.045.375.137.46.092.086.25.128.475.128Zm3.933%200h.705c.224%200%20.382-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.092-.086-.25-.129-.474-.129h-.705c-.224%200-.382.043-.474.128-.092.086-.138.24-.138.46v.695c0%20.221.046.375.138.46.092.086.25.128.474.128Zm3.934%200h.704c.225%200%20.383-.042.475-.128.091-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.092-.086-.25-.129-.475-.129h-.704c-.224%200-.382.043-.474.128-.092.086-.138.24-.138.46v.695c0%20.221.046.375.138.46.092.086.25.128.474.128Zm3.934%200h.704c.224%200%20.383-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.091-.086-.25-.129-.474-.129h-.704c-.225%200-.383.043-.475.128-.091.086-.137.24-.137.46v.695c0%20.221.046.375.137.46.092.086.25.128.475.128ZM5.74%2018.413h.704c.224%200%20.383-.043.474-.128.092-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.091-.085-.25-.128-.474-.128H5.74c-.225%200-.383.043-.475.128-.092.086-.137.239-.137.46v.694c0%20.222.045.375.137.46.092.086.25.129.475.129Zm3.933%200h.705c.224%200%20.382-.043.474-.128.092-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.092-.085-.25-.128-.474-.128h-.705c-.224%200-.382.043-.474.128-.092.086-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.225%200%20.383-.043.475-.128.091-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.092-.085-.25-.128-.475-.128h-.704c-.224%200-.382.043-.474.128-.092.086-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Z'%20fill%3D'%23000'%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    /*--19230045i2mageurl: url("https://api.onedrive.com/v1.0/shares/s!AlyPMEviU_SjhqBKpymAlSYD7Ip5Bg/root/content");*/
+    /*黑色主题 纯白*/
+    --19230045i3mageurl: url("data:image/svg+xml;utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M3.903%2023h16.194c1.306%200%202.283-.317%202.931-.95.648-.634.972-1.585.972-2.852V4.802c0-1.267-.324-2.218-.972-2.851C22.38%201.317%2021.403%201%2020.097%201H3.903c-1.296%200-2.27.317-2.923.95C.327%202.585%200%203.536%200%204.803v14.396c0%201.267.327%202.218.98%202.851.653.634%201.627.951%202.923.951Zm-.214-2.188c-.47%200-.834-.123-1.095-.37-.26-.246-.39-.616-.39-1.109V7.986c0-.493.13-.862.39-1.109.26-.246.625-.37%201.095-.37h16.607c.48%200%20.85.124%201.11.37.26.247.39.616.39%201.11v11.346c0%20.493-.13.863-.39%201.11-.26.246-.63.37-1.11.37H3.689Zm5.984-10.034h.705c.224%200%20.382-.043.474-.129.092-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.092-.086-.25-.128-.474-.128h-.705c-.224%200-.382.042-.474.128-.092.085-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.225%200%20.383-.043.475-.129.091-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.092-.086-.25-.128-.475-.128h-.704c-.224%200-.382.042-.474.128-.092.085-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.224%200%20.383-.043.474-.129.092-.085.138-.238.138-.46v-.694c0-.221-.046-.375-.138-.46-.091-.086-.25-.128-.474-.128h-.704c-.225%200-.383.042-.475.128-.091.085-.137.239-.137.46v.694c0%20.222.046.375.137.46.092.086.25.129.475.129ZM5.74%2014.595h.704c.224%200%20.383-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.091-.086-.25-.129-.474-.129H5.74c-.225%200-.383.043-.475.128-.092.086-.137.24-.137.46v.695c0%20.221.045.375.137.46.092.086.25.128.475.128Zm3.933%200h.705c.224%200%20.382-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.092-.086-.25-.129-.474-.129h-.705c-.224%200-.382.043-.474.128-.092.086-.138.24-.138.46v.695c0%20.221.046.375.138.46.092.086.25.128.474.128Zm3.934%200h.704c.225%200%20.383-.042.475-.128.091-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.092-.086-.25-.129-.475-.129h-.704c-.224%200-.382.043-.474.128-.092.086-.138.24-.138.46v.695c0%20.221.046.375.138.46.092.086.25.128.474.128Zm3.934%200h.704c.224%200%20.383-.042.474-.128.092-.085.138-.239.138-.46v-.694c0-.222-.046-.375-.138-.46-.091-.086-.25-.129-.474-.129h-.704c-.225%200-.383.043-.475.128-.091.086-.137.24-.137.46v.695c0%20.221.046.375.137.46.092.086.25.128.475.128ZM5.74%2018.413h.704c.224%200%20.383-.043.474-.128.092-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.091-.085-.25-.128-.474-.128H5.74c-.225%200-.383.043-.475.128-.092.086-.137.239-.137.46v.694c0%20.222.045.375.137.46.092.086.25.129.475.129Zm3.933%200h.705c.224%200%20.382-.043.474-.128.092-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.092-.085-.25-.128-.474-.128h-.705c-.224%200-.382.043-.474.128-.092.086-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Zm3.934%200h.704c.225%200%20.383-.043.475-.128.091-.086.138-.24.138-.46v-.695c0-.221-.046-.374-.138-.46-.092-.085-.25-.128-.475-.128h-.704c-.224%200-.382.043-.474.128-.092.086-.138.239-.138.46v.694c0%20.222.046.375.138.46.092.086.25.129.474.129Z%22%20fill%3D%22currentcolor%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  }
+  
+  :root{
+    /*相对于当前字体的大小*/
+    --ls-page-calendar-size : 0.87em;
+    --ls-page-calendar-top: 0.09em;
+  }
+  
+  /*页面标题*/
+  html[data-theme="light"] .ls-page-title span[data-ref^="Mon,"]::before,
+  html[data-theme="light"] .ls-page-title span[data-ref^="Thu,"]::before,
+  html[data-theme="light"] .ls-page-title span[data-ref^="Wed,"]::before,
+  html[data-theme="light"] .ls-page-title span[data-ref^="Tue,"]::before,
+  html[data-theme="light"] .ls-page-title span[data-ref^="Fri,"]::before,
+  html[data-theme="light"] .ls-page-title span[data-ref^="Sat,"]::before,
+  html[data-theme="light"] .ls-page-title span[data-ref^="Sun,"]::before {
+    content: "";
+    background-image: var(--19230045i2mageurl);
+    background-size: 100%;
+    width: var(--ls-page-calendar-size);
+    height: var(--ls-page-calendar-size);
+    position: relative;
+    top: var(--ls-page-calendar-top);;
+    left: 0;
+    z-index: 0;
+    display: inline-block;
+    overflow: auto;
+    margin-right: 0.6rem;
+  }
+  html[data-theme="dark"] .ls-page-title span[data-ref^="Mon,"]::before,
+  html[data-theme="dark"] .ls-page-title span[data-ref^="Thu,"]::before,
+  html[data-theme="dark"] .ls-page-title span[data-ref^="Wed,"]::before,
+  html[data-theme="dark"] .ls-page-title span[data-ref^="Tue,"]::before,
+  html[data-theme="dark"] .ls-page-title span[data-ref^="Fri,"]::before,
+  html[data-theme="dark"] .ls-page-title span[data-ref^="Sat,"]::before,
+  html[data-theme="dark"] .ls-page-title span[data-ref^="Sun,"]::before {
+    content: "";
+    background-image: var(--19230045i2mageurl);
+    background-size: 100%;
+    width: var(--ls-page-calendar-size);
+    height: var(--ls-page-calendar-size);
+    position: relative;
+    top: var(--ls-page-calendar-top);
+    left: 0;
+    z-index: 0;
+    display: inline-block;
+    overflow: auto;
+    margin-right: 0.6rem;
+    filter: invert(100%);
+  }
+  /*:is(.ls-page-title span[data-ref^="tue"])::before{
+  
+    margin-right: .6rem;
+   }*/
+  
+  /*页面内容*/
+  html[data-theme="light"] a[data-ref^="mon,"],
+  html[data-theme="light"] a[data-ref^="thu,"],
+  html[data-theme="light"] a[data-ref^="wed,"],
+  html[data-theme="light"] a[data-ref^="tue,"],
+  html[data-theme="light"] a[data-ref^="fri,"],
+  html[data-theme="light"] a[data-ref^="sat,"],
+  html[data-theme="light"] a[data-ref^="sun,"] {
+    color: rgba(31, 34, 37, 0.65) !important;
+    background: rgba(31, 34, 37, 0.06);
+    border-radius: 4px;
+  }
+  html[data-theme="light"] a[data-ref^="mon,"]:hover,
+  html[data-theme="light"] a[data-ref^="thu,"]:hover,
+  html[data-theme="light"] a[data-ref^="wed,"]:hover,
+  html[data-theme="light"] a[data-ref^="tue,"]:hover,
+  html[data-theme="light"] a[data-ref^="fri,"]:hover,
+  html[data-theme="light"] a[data-ref^="sat,"]:hover,
+  html[data-theme="light"] a[data-ref^="sun,"]:hover {
+    color: rgba(31, 34, 37, 0.65) !important;
+    background: rgba(233, 233, 233);
+    border-radius: 4px;
+  }
+  html[data-theme="dark"] a[data-ref^="mon,"],
+  html[data-theme="dark"] a[data-ref^="thu,"],
+  html[data-theme="dark"] a[data-ref^="wed,"],
+  html[data-theme="dark"] a[data-ref^="tue,"],
+  html[data-theme="dark"] a[data-ref^="fri,"],
+  html[data-theme="dark"] a[data-ref^="sat,"],
+  html[data-theme="dark"] a[data-ref^="sun,"] {
+    background: rgba(47,47,47);
+    color: rgba(182, 182, 182);
+    border-radius: 4px;
+   
+  }
+  html[data-theme="dark"] a[data-ref^="mon,"]:hover,
+  html[data-theme="dark"] a[data-ref^="thu,"]:hover,
+  html[data-theme="dark"] a[data-ref^="wed,"]:hover,
+  html[data-theme="dark"] a[data-ref^="tue,"]:hover,
+  html[data-theme="dark"] a[data-ref^="fri,"]:hover,
+  html[data-theme="dark"] a[data-ref^="sat,"]:hover,
+  html[data-theme="dark"] a[data-ref^="sun,"]:hover {
+    background: rgba(56,56,56);
+    color: rgba(182, 182, 182) !important;
+    border-radius: 4px;
+   
+  }
+  
+  html[data-theme="light"] a[data-ref^="mon,"]::before,
+  html[data-theme="light"] a[data-ref^="thu,"]::before,
+  html[data-theme="light"] a[data-ref^="wed,"]::before,
+  html[data-theme="light"] a[data-ref^="tue,"]::before,
+  html[data-theme="light"] a[data-ref^="fri,"]::before,
+  html[data-theme="light"] a[data-ref^="sat,"]::before,
+  html[data-theme="light"] a[data-ref^="sun,"]::before {
+    content: "";
+   
+    background-image: var(--19230045imageurl);
+    background-size: 100%;
+    width: var(--ls-page-calendar-size);
+    height: var(--ls-page-calendar-size);
+    position: relative;
+    top: var(--ls-page-calendar-top);
+    left: 0;
+    z-index: 0;
+    display: inline-block;
+    overflow: auto;
+    margin-right: 0.35rem;
+  }
+  html[data-theme="dark"] a[data-ref^="mon,"]::before,
+  html[data-theme="dark"] a[data-ref^="thu,"]::before,
+  html[data-theme="dark"] a[data-ref^="wed,"]::before,
+  html[data-theme="dark"] a[data-ref^="tue,"]::before,
+  html[data-theme="dark"] a[data-ref^="fri,"]::before,
+  html[data-theme="dark"] a[data-ref^="sat,"]::before,
+  html[data-theme="dark"] a[data-ref^="sun,"]::before {
+    content: "";
+    color: inherit !important;
+    background-image: var(--19230045i3mageurl);
+    background-size: 100%;
+    width: var(--ls-page-calendar-size);
+    height: var(--ls-page-calendar-size);
+    position: relative;
+    top: var(--ls-page-calendar-top);
+    left: 0;
+    z-index: 0;
+    display: inline-block;
+    overflow: auto;
+    margin-right: 0.35rem;
+    filter: invert(100%);
+    opacity: .62;
+  }
+  
+  /*侧边栏日历图标*/
+  .left-sidebar-inner .nav-content-item .bd ul [data-ref^="Mon,"]  .page-title,
+  .left-sidebar-inner .nav-content-item .bd ul [data-ref^="Thu,"]  .page-title, 
+  .left-sidebar-inner .nav-content-item .bd ul [data-ref^="Tue,"]  .page-title,
+  .left-sidebar-inner .nav-content-item .bd ul [data-ref^="Wed,"]  .page-title, 
+  .left-sidebar-inner .nav-content-item .bd ul [data-ref^="Fri,"]  .page-title, 
+  .left-sidebar-inner .nav-content-item .bd ul [data-ref^="Sat,"]  .page-title, 
+  .left-sidebar-inner .nav-content-item .bd ul [data-ref^="Sun,"]  .page-title 
+   {
+    margin-left: -0.25rem !important;
+  }
+  /*优化 表格中 不日期不添加图标和颜色 背景*/
+  tbody  a[data-ref^="mon,"]::before,
+  tbody a[data-ref^="thu,"]::before,
+  tbody a[data-ref^="wed,"]::before,
+  tbody a[data-ref^="tue,"]::before,
+  tbody a[data-ref^="fri,"]::before,
+  tbody a[data-ref^="sat,"]::before,
+  tbody a[data-ref^="sun,"]::before {
+    background-image: none !important;
+    display: none !important;
+   
+  }
+  tbody  a[data-ref^="mon,"],
+  tbody a[data-ref^="thu,"],
+  tbody a[data-ref^="wed,"],
+  tbody a[data-ref^="tue,"],
+  tbody a[data-ref^="fri,"],
+  tbody a[data-ref^="sat,"],
+  tbody a[data-ref^="sun,"] {
+    background: none !important;
+   
+  }
+  
+  /*日志流中的页面内容 icon位置和在单个页面内还不一样*/
+  #journals  a[data-ref^="mon,"]::before,
+  #journals a[data-ref^="thu,"]::before,
+   #journals a[data-ref^="wed,"]::before,
+  #journals a[data-ref^="tue,"]::before,
+  #journals a[data-ref^="fri,"]::before,
+  #journals a[data-ref^="sat,"]::before,
+   #journals  a[data-ref^="sun,"]::before{
+    top: 0.07em;
+   }
+  
+  
+  /*页面底部引用块 日历图标的位置*/
+  .references-blocks a[data-ref^="mon,"]::before,
+  .references-blocks a[data-ref^="thu,"]::before,
+  .references-blocks a[data-ref^="wed,"]::before,
+  .references-blocks a[data-ref^="tue,"]::before,
+   .references-blocks a[data-ref^="fri,"]::before,
+   .references-blocks a[data-ref^="sat,"]::before,
+  .references-blocks a[data-ref^="sun,"]::before,
+  .references-blocks a[data-ref^="mon,"]::before,
+  .references-blocks a[data-ref^="thu,"]::before,
+  .references-blocks a[data-ref^="wed,"]::before,
+   .references-blocks a[data-ref^="tue,"]::before,
+   .references-blocks a[data-ref^="fri,"]::before,
+   .references-blocks a[data-ref^="sat,"]::before,
+  .references-blocks a[data-ref^="sun,"]::before {
+    top: 0.04em !important;
+  }
+  /*日志流中的页面内容 面底部引用块 日历图标的位置*/
+  #journals .references-blocks a[data-ref^="mon,"]::before,
+  #journals .references-blocks a[data-ref^="thu,"]::before,
+  #journals .references-blocks a[data-ref^="wed,"]::before,
+  #journals .references-blocks a[data-ref^="tue,"]::before,
+  #journals .references-blocks a[data-ref^="fri,"]::before,
+  #journals .references-blocks a[data-ref^="sat,"]::before,
+  #journals .references-blocks a[data-ref^="sun,"]::before,
+  #journals .references-blocks a[data-ref^="mon,"]::before,
+  #journals .references-blocks a[data-ref^="thu,"]::before,
+  #journals .references-blocks a[data-ref^="wed,"]::before,
+  #journals .references-blocks a[data-ref^="tue,"]::before,
+  #journals .references-blocks a[data-ref^="fri,"]::before,
+  #journals .references-blocks a[data-ref^="sat,"]::before,
+  #journals .references-blocks a[data-ref^="sun,"]::before {
+    top: 0.07em !important;
+  }
+  /*:is(a[data-ref^="tue"]):hover{
+    color: rgba(31, 34, 37, 0.65)!important;
+  }*/
+  /*:is(a[data-ref^="tue"].tag) {
+    只有data-ref^="XX"并且class=tag的才添加边框
+  border: 1px solid inherit;
+  }*/
+  
+  
+  /*面包屑导航 纯色即可*/
+  .breadcrumb a[data-ref^="mon,"],
+  .breadcrumb a[data-ref^="thu,"],
+  .breadcrumb a[data-ref^="wed,"],
+  .breadcrumb a[data-ref^="tue,"],
+  .breadcrumb a[data-ref^="fri,"],
+  .breadcrumb a[data-ref^="sat,"],
+  .breadcrumb a[data-ref^="sun,"] {
+    background-color: transparent;
+    color: inherit !important;
+  }
+  .block-properties a[data-ref^="mon,"],
+  .block-properties a[data-ref^="thu,"],
+  .block-properties a[data-ref^="wed,"],
+  .block-properties a[data-ref^="tue,"],
+  .block-properties a[data-ref^="fri,"],
+  .block-properties a[data-ref^="sat,"],
+  .block-properties a[data-ref^="sun,"] {
+    background-color: transparent !important;
+    color: inherit !important;
+  }
+  /*侧边栏的三个点 右键*/
+  #left-sidebar .ui__icon.ti.ls-icon-dots  {
+    display: none;
+  }
+  
+  /*页面侧边栏图标*/
+  [title^="Mon,"] a>span.page-icon,
+  [title^="Thu,"] a>span.page-icon,
+  [title^="Wed,"] a>span.page-icon,
+  [title^="Tue,"] a>span.page-icon,
+  [title^="Fri,"] a>span.page-icon,
+  [title^="Sat,"] a>span.page-icon,
+  [title^="Sun,"] a>span.page-icon {
+    text-indent: -9999px;
+  }
+  /*隐藏星期的原始默认图标，否则焦点在侧边栏，自定义图标出现阴影*/
+  [title^="Mon,"] span.page-icon .ti,
+  [title^="Thu,"] span.page-icon .ti,
+  [title^="Wed,"] span.page-icon .ti,
+  [title^="Tue,"] span.page-icon .ti,
+  [title^="Fri,"] span.page-icon .ti,
+  [title^="Sat,"] span.page-icon .ti,
+  [title^="Sun,"] span.page-icon .ti {
+    display: none !important;
+  }
+  html[data-theme="light"] [title^="Mon,"] span.page-icon,
+  html[data-theme="light"] [title^="Thu,"] span.page-icon,
+  html[data-theme="light"] [title^="Wed,"] span.page-icon,
+  html[data-theme="light"] [title^="Tue,"] span.page-icon,
+  html[data-theme="light"] [title^="Fri,"] span.page-icon,
+  html[data-theme="light"] [title^="Sat,"] span.page-icon,
+  html[data-theme="light"] [title^="Sun,"] span.page-icon {
+    content: "";
+    background-image: var(--19230045imageurl);
+    background-size: 100%;
+    width: .82rem;
+    height: .82rem;
+    position: relative;
+    /*top: 0px;*/
+    /*left: var(--Lefticon_picture_left);*/
+    left: -0.5rem !important;
+    z-index: 0;
+    display: inline-block;
+    overflow: auto;
+  }
+  html[data-theme="dark"] [title^="Mon,"] span.page-icon,
+  html[data-theme="dark"] [title^="Thu,"] span.page-icon,
+  html[data-theme="dark"] [title^="Wed,"] span.page-icon,
+  html[data-theme="dark"] [title^="Tue,"] span.page-icon,
+  html[data-theme="dark"] [title^="Fri,"] span.page-icon,
+  html[data-theme="dark"] [title^="Sat,"] span.page-icon,
+  html[data-theme="dark"] [title^="Sun,"] span.page-icon {
+    content: "";
+    background-image: var(--19230045i3mageurl);
+    background-size: 100%;
+    width: .82rem;
+    height: .82rem;
+    position: relative;
+    /*top: 0px;*/
+    /*left: var(--Lefticon_picture_left);*/
+    left: -0.5rem !important;
+    z-index: 0;
+    display: inline-block;
+    overflow: auto;
+    filter: invert(100%);
+    opacity: 0.71;
+  }
+  
+  a[title^="Mon,"] span.page-title,
+  a[title^="Thu,"] span.page-title,
+  a[title^="Wed,"] span.page-title,
+  a[title^="Tue,"] span.page-title,
+  a[title^="Sat,"] span.page-title,
+  a[title^="Sun,"] span.page-title,
+  a[title^="Fri,"] span.page-title
+  {
+    margin-left: -.09rem !important;
+  }
