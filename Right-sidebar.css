@@ -1,4 +1,4 @@
-﻿/*右侧边栏 每个块*/
+/*右侧边栏 每个块*/
 #right-sidebar-container .shadow-lg{
     box-shadow:none !important;
     border-radius: 6px;
@@ -40,4 +40,7 @@
   /*目录按钮往后边移动，上下对齐*/
   #right-sidebar-container .cp__right-sidebar-settings:first-child{
     margin-left: 8px;
+  }
+  html[data-theme="light"] .cp__right-sidebar-inner {
+    background: rgb(255, 255, 255);
   }
