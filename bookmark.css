@@ -717,9 +717,9 @@ html[data-theme="light"] .references-blocks .ext-bg-color {
 }
 
 /*右侧边栏引用块*/
-#right-sidebar-container .color-level .color-level {
+/*#right-sidebar-container .color-level .color-level {
   background-color: rgb(232, 236, 238) !important;
-}
+}*/
 
 .ext-bg-color {
   position: relative;
