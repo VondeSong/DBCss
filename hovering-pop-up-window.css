@@ -1,0 +1,64 @@
+﻿/*双链hover悬浮窗*/
+.tippy-wrapper {
+    font-size: var(--ls-page-text-size) !important;
+  }
+  
+  
+  /*链接hover弹窗 参考craft ai*/
+  .tippy-tooltip {
+    border-width:0;
+  }
+  html[data-theme="light"] .tippy-popper .tippy-tooltip {
+    background: linear-gradient(116deg, rgba(250, 250, 250, 0.85), rgba(244, 244, 244, 0.85));
+      /* backdrop-filter: saturate(1.5) blur(32px); */
+      box-shadow: rgba(31, 34, 37, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 12px 24px -4px, rgba(0, 0, 0, 0.04) 0px 8px 16px -4px;
+      border-radius: 8px;
+  }
+  html[data-theme="dark"] .tippy-popper .tippy-tooltip {
+    background: linear-gradient(116deg, rgba(40, 42, 43, 0.85), rgba(34, 36, 37, 0.85));
+   /*backdrop-filter: saturate(1.5) blur(32px);*/
+    box-shadow: rgba(244, 244, 244, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 12px 24px -4px, rgba(0, 0, 0, 0.08) 0px 8px 16px -4px;
+    border-radius: 8px;
+  }
+  html[data-theme="light"] .tippy-popper .tippy-tooltip .tippy-tooltip-content {
+   /*background: linear-gradient(rgba(162, 77, 179, 0) -10.84%, rgba(162, 77, 179, 0.32) 107.87%);*/
+      padding: 5px;
+      border-radius: 8px;
+    
+  }
+  html[data-theme="dark"] .tippy-popper .tippy-tooltip .tippy-tooltip-content {
+   /*background: linear-gradient(rgba(170, 64, 191, 0) -10.84%, rgba(170, 64, 191, 0.56) 107.87%);*/
+      padding: 5px;
+      border-radius: 8px;
+  }
+  
+  
+  html[data-theme="dark"] .tippy-wrapper .block-properties {
+    border: 1px solid rgb(57, 57, 62, .2);
+    border-radius: 6px;
+    font-size: small;
+    color: rgba(244, 244, 244, 0.8) !important;
+    /*块属性 页面属性中引用颜色*/
+    --ls-link-ref-text-color: rgb(134, 196, 222, .9) !important;
+    --ls-link-text-color: rgba(244, 244, 244, 0.5) !important;
+  
+  }
+  html[data-theme="dark"] .tippy-wrapper {
+    /*background: linear-gradient(116deg, rgba(40, 42, 43, 0.85), rgba(34, 36, 37, 0.85));
+     backdrop-filter: saturate(1.5) blur(32px);
+     border-radius: 8px;
+     box-shadow: rgba(244, 244, 244, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 12px 24px -4px, rgba(0, 0, 0, 0.08) 0px 8px 16px -4px;*/
+     box-shadow: rgba(255, 255, 255, 0.09) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+     background: rgba(29, 30, 32, 0.75);
+     border-radius: 6px;
+   }
+   
+   html[data-theme="light"] .tippy-wrapper {
+    /*background: linear-gradient(116deg, rgba(250, 250, 250, 0.85), rgba(244, 244, 244, 0.85));
+     box-shadow: rgba(31, 34, 37, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.08) 0px 12px 24px -4px, rgba(0, 0, 0, 0.04) 0px 8px 16px -4px;
+     border-radius: 8px;*/
+     /*透明度*/
+     background: rgba(255, 255, 255, 0.95);
+       border-radius: 6px;
+       box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   }
