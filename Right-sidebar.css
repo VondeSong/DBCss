@@ -42,5 +42,5 @@
     margin-left: 8px;
   }
   html[data-theme="light"] .cp__right-sidebar-inner {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255) !important;
   }
