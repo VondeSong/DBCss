@@ -1,0 +1,43 @@
+﻿/*右侧边栏 每个块*/
+#right-sidebar-container .shadow-lg{
+    box-shadow:none !important;
+    border-radius: 6px;
+      border: 1px solid rgba(31, 34, 37, 0.09);
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+      cursor: pointer;
+      background: rgb(255, 255, 255) !important;
+      overflow: hidden;
+  }
+  #right-sidebar-container .shadow-lg:hover{
+   box-shadow: rgba(31, 34, 37, 0.12) 0px 3px 8px 0px;
+      /*transform: translateY(-1px);*/
+      border: 1px solid rgba(31, 34, 37, 0.12);
+  }
+  
+  #right-sidebar-container .sidebar-item-header {
+    background: rgb(255, 255, 255) !important;
+    font-size:13px  !important;
+  }
+  /*右侧边栏 图谱 显示日记*/
+  .item-type-page-graph .items-center{
+    font-size: 13px;
+  }
+  
+  html[data-theme="light"] .cp__right-sidebar-inner {
+      /* border: 1px solid red !important; */
+      margin-left: 8px;
+      margin-right: 8px;
+      height: calc(100vh - var(--ls-headbar-inner-top-padding) - 58px);
+      margin-top: var(--ls-headbar-height);
+      border-radius: 8px;
+     
+     border-radius: 8px;
+   background-color: rgb(255, 255, 255);
+   overflow: auto;
+   box-shadow: rgb(238, 238, 238) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 4px 13px;
+  }
+  /*右侧边栏 第一行 目录、页面图谱、帮助 RTC四个按钮*/
+  /*目录按钮往后边移动，上下对齐*/
+  #right-sidebar-container .cp__right-sidebar-settings:first-child{
+    margin-left: 8px;
+  }
