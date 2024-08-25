@@ -8,7 +8,7 @@ html[data-theme="light"] .multi-values.jtrigger [data-ref]{
 html[data-theme="light"] .multi-values.jtrigger [data-ref]>span:not(.mr-1):not(:has(em-emoji)){
   text-indent: -9px;
 overflow: hidden;
-  color: #5783f7 !important;
+  color: #5783f7;
 }
 html[data-theme="dark"] .multi-values.jtrigger [data-ref]{
   background: #3a4359;
@@ -19,7 +19,7 @@ html[data-theme="dark"] .multi-values.jtrigger [data-ref]{
 html[data-theme="dark"] .multi-values.jtrigger [data-ref]>span:not(.mr-1):not(:has(em-emoji)){
   text-indent: -9px;
 overflow: hidden;
-  color: #2b88d8 !important;
+  color: #2b88d8;
 }
 /*属性值中 多个标签多行显示之间的间距*/
 .property-value-inner .gap-y-2{
