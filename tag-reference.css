@@ -84,23 +84,23 @@ a.tag::before{
   opacity: .8;
 }
 html[data-theme="light"] a.tag {
-  color: #5783f7 !important;
+  color: #5783f7;
   opacity: 1;
   font-size: 1em;
 }
 html[data-theme="light"]:hover a.tag {
-  color: #5783f7 !important;
+  color: #5783f7;
   opacity: 1;
   font-size: 1em;
 }
 html[data-theme="dark"] a.tag {
-  color: #2b88d8 !important;
+  color: #2b88d8;
   opacity: 1;
   font-size: 1em;
   
 }
 html[data-theme="dark"] a.tag:hover {
-  color: #2b88d8 !important;
+  color: #2b88d8;
   opacity: 1;
   font-size: 1em; 
 }
