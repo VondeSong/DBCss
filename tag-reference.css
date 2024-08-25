@@ -1,9 +1,10 @@
-/*用来多选的标签*/
+/*用来多选的标签 :not(.page-ref)是为了排除alias的属性*/
 html[data-theme="light"] .multi-values.jtrigger [data-ref]:not(.page-ref){
   background: #eef3fe;
   font-size: 14px !important;
   border-radius: 3px;
   padding: 4px 3px;
+  border-bottom: 0 1px red !important;
 }
 html[data-theme="light"] .multi-values.jtrigger [data-ref]:not(.page-ref)>span:not(.mr-1):not(:has(em-emoji)){
   text-indent: -9px;
@@ -15,6 +16,7 @@ html[data-theme="dark"] .multi-values.jtrigger [data-ref]:not(.page-ref){
   font-size: 14px !important;
   border-radius: 3px;
   padding: 4px 3px;
+  border-bottom: 0 1px red !important;
 }
 html[data-theme="dark"] .multi-values.jtrigger [data-ref]:not(.page-ref)>span:not(.mr-1):not(:has(em-emoji)){
   text-indent: -9px;
