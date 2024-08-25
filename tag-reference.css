@@ -1,22 +1,22 @@
 /*用来多选的标签*/
-html[data-theme="light"] .multi-values.jtrigger [data-ref]{
+html[data-theme="light"] .multi-values.jtrigger [data-ref]:not(.page-ref){
   background: #eef3fe;
   font-size: 14px !important;
   border-radius: 3px;
   padding: 4px 3px;
 }
-html[data-theme="light"] .multi-values.jtrigger [data-ref]>span:not(.mr-1):not(:has(em-emoji)){
+html[data-theme="light"] .multi-values.jtrigger [data-ref]:not(.page-ref)>span:not(.mr-1):not(:has(em-emoji)){
   text-indent: -9px;
 overflow: hidden;
   color: #5783f7;
 }
-html[data-theme="dark"] .multi-values.jtrigger [data-ref]{
+html[data-theme="dark"] .multi-values.jtrigger [data-ref]:not(.page-ref){
   background: #3a4359;
   font-size: 14px !important;
   border-radius: 3px;
   padding: 4px 3px;
 }
-html[data-theme="dark"] .multi-values.jtrigger [data-ref]>span:not(.mr-1):not(:has(em-emoji)){
+html[data-theme="dark"] .multi-values.jtrigger [data-ref]:not(.page-ref)>span:not(.mr-1):not(:has(em-emoji)){
   text-indent: -9px;
 overflow: hidden;
   color: #2b88d8;
