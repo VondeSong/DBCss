@@ -1,3 +1,31 @@
+/*用来多选的标签*/
+html[data-theme="light"] .multi-values.jtrigger [data-ref]{
+  background: #eef3fe;
+  font-size: 14px !important;
+  border-radius: 3px;
+  padding: 4px 3px;
+}
+html[data-theme="light"] .multi-values.jtrigger [data-ref]>span:not(.mr-1):not(:has(em-emoji)){
+  text-indent: -9px;
+overflow: hidden;
+  color: #5783f7 !important;
+}
+html[data-theme="dark"] .multi-values.jtrigger [data-ref]{
+  background: #3a4359;
+  font-size: 14px !important;
+  border-radius: 3px;
+  padding: 4px 3px;
+}
+html[data-theme="dark"] .multi-values.jtrigger [data-ref]>span:not(.mr-1):not(:has(em-emoji)){
+  text-indent: -9px;
+overflow: hidden;
+  color: #2b88d8 !important;
+}
+
+
+
+
+
 ﻿ /*双链 引用*/
  .page-reference:hover {
   background-color: transparent !important;
@@ -52,23 +80,23 @@ a.tag::before{
   opacity: .8;
 }
 html[data-theme="light"] a.tag {
-  color: #A7B6C2 !important;
+  color: #5783f7 !important;
   opacity: 1;
   font-size: 1em;
 }
 html[data-theme="light"]:hover a.tag {
-  color: #A7B6C2 !important;
+  color: #5783f7 !important;
   opacity: 1;
   font-size: 1em;
 }
 html[data-theme="dark"] a.tag {
-  color: #8A9BA8 !important;
+  color: #2b88d8 !important;
   opacity: 1;
   font-size: 1em;
   
 }
 html[data-theme="dark"] a.tag:hover {
-  color: #8A9BA8 !important;
+  color: #2b88d8 !important;
   opacity: 1;
   font-size: 1em; 
 }
