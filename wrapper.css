@@ -1,0 +1,425 @@
+﻿/*插件text wrapper 自定义样式*/
+
+a[data-ref="#red"],
+a[data-ref="#green"],
+a[data-ref="#blue"],
+a[data-ref="$red"],
+a[data-ref="$green"],
+a[data-ref="$gray"],
+a[data-ref="$orange"],
+a[data-ref="$example"],
+a[data-ref="$hatgray"],
+a[data-ref="$blue"],
+a[data-ref="$bluebk"],
+a[data-ref="$bluebk2"],
+a[data-ref="$pink"],
+a[data-ref="$rose"],
+a[data-ref="$redtext"],
+a[data-ref="$bluetext"],
+a[data-ref="$greentext"],
+a[data-ref="$yetext"],
+a[data-ref="$bearbk"] {
+  display: none;
+}
+
+/*渐变后 遇到双链的括号 透明度会失效，只有1才可以看到*/
+span.page-reference:has([data-ref="#red"])+ mark   .bracket,
+span.page-reference:has([data-ref="#green"]) + mark  .bracket,
+span.page-reference:has([data-ref="#blue"]) + mark  .bracket,
+span.page-reference:has([data-ref="$red"]) + mark  .bracket,
+span.page-reference:has([data-ref="$green"]) + mark  .bracket,
+span.page-reference:has([data-ref="$gray"] )+ mark .bracket,
+span.page-reference:has([data-ref="$orange"]) + mark  .bracket,
+span.page-reference:has([data-ref="$hatgray"]) + mark  .bracket,
+span.page-reference:has([data-ref="$blue"]) + mark  .bracket,
+span.page-reference:has([data-ref="$bluebk"]) + mark  .bracket,
+span.page-reference:has([data-ref="$bluebk2"]) + mark  .bracket,
+span.page-reference:has([data-ref="$pink"]) + mark  .bracket,
+span.page-reference:has([data-ref="$rose"]) + mark  .bracket,
+span.page-reference:has([data-ref="$redtext"]) + mark  .bracket,
+span.page-reference:has([data-ref="$redtext"]) + mark  .bracket,
+/*a[data-ref="$bluetext"] .page-reference .bracket,*/
+span.page-reference:has(a[data-ref="$greentext"] )+ mark  .bracket,
+span.page-reference:has(a[data-ref="$yetext"]) + mark  .bracket
+/*a[data-ref="$bearbk"] .page-reference .bracket*/
+{
+  opacity: 1 !important;
+}
+/*渐变后 遇到双链hover 默认双链hover背景色会遮挡*/
+span.page-reference:has([data-ref="#red"]) + mark .page-reference:hover,
+span.page-reference:has([data-ref="#green"]) + mark .page-reference:hover,
+span.page-reference:has([data-ref="#blue"]) + mark  .page-reference:hover,
+span.page-reference:has([data-ref="$red"] )+ mark  .page-reference:hover,
+span.page-reference:has([data-ref="$green"]) + mark  .page-reference:hover,
+span.page-reference:has([data-ref="$gray"] )+ mark .page-reference:hover,
+span.page-reference:has([data-ref="$orange"]) + mark  .page-reference:hover,
+span.page-reference:has([data-ref="$hatgray"]) + mark  .page-reference:hover,
+span.page-reference:has([data-ref="$blue"] )+ mark  .page-reference:hover,
+span.page-reference:has([data-ref="$bluebk"]) + mark .page-reference:hover,
+span.page-reference:has([data-ref="$bluebk2"]) + mark  .page-reference:hover,
+span.page-reference:has([data-ref="$pink"] )+ mark  .page-reference:hover,
+span.page-reference:has([data-ref="$rose"] )+ mark  .page-reference:hover,
+span.page-reference:has([data-ref="$redtext"]) + mark  .page-reference:hover,
+span.page-reference:has([data-ref="$redtext"] )+ mark  .page-reference:hover,
+/*a[data-ref="$bluetext"] .page-reference .bracket,*/
+span.page-reference:has(a[data-ref="$greentext"]) + mark  .page-reference:hover,
+span.page-reference:has(a[data-ref="$yetext"] )+ mark  .page-reference:hover
+/*a[data-ref="$bearbk"] + mark .page-reference:hover*/
+{
+  background: transparent !important;
+}
+/*data-refs-self="["电影", "$example"]"*/
+html[data-theme="light"] [data-refs-self*="$example"]> .block-main-container .block-content-wrapper{
+  color: #424c56 ;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: rgb(240, 241, 243) !important;
+  padding: 10px 16px;
+  line-height: var(--AdvancedBlocklineHeight);
+}
+html[data-theme="dark"] [data-refs-self*="$example"]> .block-main-container .block-content-wrapper{
+  color: #424c56 ;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: rgb(48,50,51) !important;
+  padding: 10px 16px;
+  line-height: var(--AdvancedBlocklineHeight);
+}
+/**/
+
+/*字体颜色设置 有段落出现 和 一行文字，设置inline*/
+html[data-theme="light"] [data-refs-self*="$example"]> .block-main-container .block-content-wrapper .is-paragraph,
+html[data-theme="light"] [data-refs-self*="$example"]> .block-main-container .block-content-wrapper .inline {
+  color: #424c56 !important;
+}
+html[data-theme="dark"] [data-refs-self*="$example"]> .block-main-container .block-content-wrapper .is-paragraph,
+html[data-theme="dark"] [data-refs-self*="$example"]> .block-main-container .block-content-wrapper .inline
+{
+  color: rgb(213, 222, 228) !important;
+}
+[data-refs-self*='$example']> .block-main-container .block-content-wrapper mark{
+  /*会影响高亮颜色*/
+ /*box-shadow:none !important;
+  background: transparent !important;*/
+}
+[data-refs-self*='$example']> .block-main-container .block-content-wrapper .page-reference {
+  padding: 0 !important;
+} 
+
+/*第一行的加粗字体的设置样式 [[$example]]一行紧紧跟随是标题处理，其他的加粗不处理*/
+html[data-theme="light"] [data-refs-self*='$example'] [data-ref="$example"] + b{
+  font-variation-settings: "wght" 700;
+  color: #363d45;
+  font-size: calc(var(--ls-page-text-size) + 1px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+html[data-theme="dark"] [data-refs-self*='$example'] [data-ref="$example"] + b{
+  font-variation-settings: "wght" 700;
+  color: rgb(228, 234, 237);
+  font-size: calc(var(--ls-page-text-size) + 1px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+
+
+
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$bluebk2"])+mark {
+  color: #5f9cd1 !important;
+  /* padding: 0 !important; */
+  background-color: #dff1f9 !important;
+  padding: 0px 2px !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$bluebk2"])+mark {
+  color: #1e598d !important;
+  padding: 0px 2px !important;
+  background-color: #dfdfe4 !important;
+  box-shadow: none !important;
+}
+
+span.page-reference:has(a[data-ref="$yetext"])+mark {
+  color: #ad7a03 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+span.page-reference:has(a[data-ref="$greentext"])+mark {
+  color: #007f31 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$bluetext"])+mark {
+  /*color: #2376b7 !important;*/
+  color: #0053b8 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  /*font-weight: bold;*/
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$bluetext"])+mark {
+  /*color: #2376b7 !important;*/
+  color: rgb(2, 129, 243) !important;
+  background-color: var(--ls-primary-background-color) !important;
+  padding: 0 !important;
+  /*font-weight: bold;*/
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$bearbk"])+mark {
+  /*color: #2376b7 !important;*/
+  color: #dd4c4f !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-weight: bold;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$bearbk"])+mark {
+  /*color: #2376b7 !important;*/
+  color: #dd4c4f !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-weight: bold;
+  box-shadow: none !important;
+}
+
+span.page-reference:has(a[data-ref="$redtext"])+mark {
+  /*color: #ee2746 !important;*/
+  color: #a61468 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$pink"])+mark,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$pink"])+mark .block-ref,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$pink"])+mark .page-ref {
+  font-weight: 550 !important;
+  color: rgb(176, 171, 250) !important;
+  background-image: linear-gradient(90deg, rgb(97, 229, 255) 0%, rgb(255, 112, 245) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  /*background-color: rgb(237, 241, 242,0) !important;*/
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$pink"]) +mark,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$pink"]) +mark .page-ref,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$pink"]) +mark .block-ref{
+  font-weight: 550 !important;
+  color: rgb(119, 74, 211) !important;
+  background-image: linear-gradient(90deg, rgb(36, 73, 254) 0%, rgb(202, 75, 167) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  background-color: rgb(237, 241, 242, 0) !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$red"])+mark,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$red"])+mark .block-ref,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$red"])+mark .page-ref{
+  font-weight: 550 !important;
+  color: rgb(255, 119, 132) !important;
+  background-image: linear-gradient(90deg, rgb(255, 102, 86) 0%, rgb(255, 135, 178) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$red"])+mark,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$red"])+mark .page-ref,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$red"])+mark .block-ref{
+  font-weight: 550 !important;
+  color: rgb(249, 57, 87) !important;
+  background-image: linear-gradient(90deg, rgb(255, 113, 0) 0%, rgb(243, 0, 173) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+
+}
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$blue"])+mark ,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$blue"])+mark .block-ref,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$blue"])+mark .page-ref{
+  font-weight: 550 !important;
+  color: var(--Is-beisong-color, rgb(49, 121, 206)) !important;
+  background-image: var(--Is-beisong-bkimage, linear-gradient(90deg, rgb(40, 188, 190) 0%, rgb(57, 53, 221) 100%)) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$blue"])+mark,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$blue"])+mark .block-ref,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$blue"])+mark .page-ref{
+  font-weight: 550 !important;
+  color: rgb(137, 218, 227) !important;
+  background-image: linear-gradient(90deg, rgb(159, 246, 209) 0%, rgb(114, 189, 245) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/*粉红色背景文本*/
+html[data-theme="light"] span.page-reference:has(a[data-ref="$rose"])+mark {
+  background-color: rgba(255, 150, 241, 0.4) !important;
+    box-shadow: rgba(255, 150, 241, 0.4) -1px 0px 0px, rgba(255, 150, 241, 0.4) 1px 0px 0px !important;
+    border-radius: 4px !important;
+    padding: 0px 2px !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$rose"])+mark {
+  background-color: rgba(255, 79, 217, 0.4) !important;
+  box-shadow: rgba(255, 79, 217, 0.4) -1px 0px 0px, rgba(255, 79, 217, 0.4) 1px 0px 0px !important;
+  border-radius: 4px !important;
+  padding: 0px 2px !important;
+  }
+
+
+/*绿色背景文本 green和官方的配色冲突，需要设置一下*/
+html[data-theme="light"] span.page-reference:has(a[data-ref="$green"])+mark {
+  background-color: rgba(146, 255, 57, 0.4) !important;
+    box-shadow: rgba(146, 255, 57, 0.4) -1px 0px 0px, rgba(146, 255, 57, 0.4) 1px 0px 0px !important;
+    border-radius: 4px !important;
+    padding: 0px 2px !important;
+    color: var(--ls-primary-text-color) !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$green"])+mark {
+  background-color: rgba(138, 255, 43, 0.4) !important;
+    box-shadow: rgba(138, 255, 43, 0.4) -1px 0px 0px, rgba(138, 255, 43, 0.4) 1px 0px 0px !important;
+    border-radius: 4px !important;
+    padding: 0px 2px !important;
+  }
+
+/*灰色*/
+html[data-theme="light"] span.page-reference:has(a[data-ref="$gray"])+mark {
+  background-color: rgba(184, 192, 197, 0.4) !important;
+  box-shadow: rgba(184, 192, 197, 0.4) -1px 0px 0px, rgba(184, 192, 197, 0.4) 1px 0px 0px !important;
+  border-radius: 4px !important;
+  padding: 0px 2px !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$gray"])+mark {
+  background-color: rgba(163, 175, 182, 0.4) !important;
+    box-shadow: rgba(163, 175, 182, 0.4) -1px 0px 0px, rgba(163, 175, 182, 0.4) 1px 0px 0px !important;
+    border-radius: 4px !important;
+    padding: 0px 2px !important;
+  }
+
+/*蓝色*/
+html[data-theme="light"] span.page-reference:has(a[data-ref="$bluebk"])+mark {
+  background-color: rgba(114, 194, 255, 0.4) !important;
+    box-shadow: rgba(114, 194, 255, 0.4) -1px 0px 0px, rgba(114, 194, 255, 0.4) 1px 0px 0px !important;
+    border-radius: 4px !important;
+    padding: 0px 2px !important;
+    box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$bluebk"])+mark {
+  background-color: rgba(135, 201, 255, 0.4) !important;
+    box-shadow: rgba(135, 201, 255, 0.4) -1px 0px 0px, rgba(135, 201, 255, 0.4) 1px 0px 0px !important;
+    border-radius: 4px !important;
+    padding: 0px 2px !important;
+    box-shadow: none !important;
+  }
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$orange"])+mark,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$orange"])+mark .page-ref,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$orange"])+mark .block-ref {
+  font-weight: 550 !important;
+  color: rgb(236, 116, 21) !important;
+  background-image: linear-gradient(90deg, rgb(243, 170, 0) 0%, rgb(228, 62, 41) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$orange"])+mark ,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$orange"])+mark .block-ref,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$orange"])+mark .page-ref{
+  font-weight: 550 !important;
+  color: rgb(255, 173, 120) !important;
+  background-image: linear-gradient(90deg, rgb(255, 130, 114) 0%, rgb(255, 216, 125) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="light"] span.page-reference:has(a[data-ref="$hatgray"])+mark,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$hatgray"])+mark .block-ref,
+html[data-theme="light"] span.page-reference:has(a[data-ref="$hatgray"])+mark .page-ref {
+  font-weight: 550 !important;
+  color: rgb(195, 136, 67) !important;
+  background-image: linear-gradient(90deg, rgb(177, 106, 77) 0%, rgb(213, 166, 56) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$hatgray"])+mark ,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$hatgray"])+mark .page-ref,
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$hatgray"])+mark .block-ref
+{
+  font-weight: 550 !important;
+  color: rgb(234, 195, 113) !important;
+  background-image: linear-gradient(90deg, rgb(255, 224, 169) 0%, rgb(213, 166, 56) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+/*优化 双链 在背景色文字部分的颜色 和文本颜色保持一致*/
+/*[data-ref="#red"] + mark .page-ref，
+[data-ref="#green"] + mark .page-ref,
+[data-ref="#blue"] + mark  .page-ref,
+[data-ref="$red"] + mark  .page-ref,
+[data-ref="$green"] + mark  .page-ref,
+[data-ref="$gray"] + mark .page-ref,
+[data-ref="$orange"] + mark  .page-ref,
+[data-ref="$hatgray"] + mark  .page-ref,
+[data-ref="$blue"] + mark  .page-ref,
+[data-ref="$bluebk"] + mark .page-ref,
+[data-ref="$bluebk2"] + mark  .page-ref,
+[data-ref="$pink"] + mark  .page-ref,
+[data-ref="$rose"] + mark  .page-ref,
+[data-ref="$redtext"] + mark  .page-ref,
+[data-ref="$redtext"] + mark  .page-ref,
+[data-ref="$bluetext"] + mark  .page-ref,
+[data-ref="$greentext"] + mark  .page-ref,
+[data-ref="$yetext"] + mark  .page-ref,
+[data-ref="$bearbk"] + mark .page-ref
+{
+  color: inherit !important;
+}*/
+mark .page-ref{
+  color: inherit !important;
+}
