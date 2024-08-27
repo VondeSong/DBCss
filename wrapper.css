@@ -160,7 +160,7 @@ html[data-theme="light"] span.page-reference:has(a[data-ref="$bluetext"])+mark {
   color: #0053b8 !important;
   background-color: transparent !important;
   padding: 0 !important;
-  /*font-weight: bold;*/
+  font-weight: bold;
   box-shadow: none !important;
 }
 
