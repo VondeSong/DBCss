@@ -345,7 +345,4 @@ a[title^="Fri,"] span.page-title
 {
   margin-left: -.09rem !important;
 }
-/*点击库图标的二级页面展示 去掉官方样式*/
-.ui__dropdown-menu-content.repos-list .cp__repos-list-wrap {
- overflow: hidden !important;
-}
+
