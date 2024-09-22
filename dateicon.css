@@ -333,3 +333,13 @@ li[title^="Sun,"] span.page-title,
 li[title^="Fri,"] span.page-title {
   margin-left: -.09rem !important;
 }
+li[title^="Mon,"] em-emoji,
+li[title^="Thu,"] em-emoji,
+li[title^="Wed,"] em-emoji,
+li[title^="Tue,"] em-emoji,
+li[title^="Sat,"] em-emoji,
+li[title^="Sun,"] em-emoji,
+li[title^="Fri,"] em-emoji
+{
+  display: none;
+}
