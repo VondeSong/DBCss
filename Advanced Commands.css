@@ -117,7 +117,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #8f5a13;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
   }
@@ -126,7 +126,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #ffc980;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
   }
@@ -333,7 +333,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #631927;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
     /*line-height: 22px !important;*/
@@ -343,7 +343,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #ffc1ce  !important;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
     line-height: 22px !important;
@@ -440,7 +440,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: rgb(21, 89, 68);
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
   }
@@ -449,7 +449,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #acffe8;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
   }
@@ -549,7 +549,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #15376c;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
   }
@@ -558,7 +558,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #acddff;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
   }
@@ -662,7 +662,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: rgb(18, 17, 146);
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
     /*line-height: 22px !important;*/
@@ -672,7 +672,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     color: #e4e3ff !important;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
     line-height: 22px !important;
@@ -809,7 +809,7 @@
     font-weight: 700;
     font-variation-settings: "wght" 700;
     /*color: #f93957;*/
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
     color: rgb(249, 57, 87) !important;
@@ -829,7 +829,7 @@
     -webkit-background-clip: text !important;
     -webkit-box-decoration-break: clone !important;
     transition: box-shadow 0.3s ease 0s;
-    font-size: calc(var(--ls-page-text-size) + 1px) !important;
+    font-size: calc(var(--ls-page-text-size) + 0px) !important;
     margin-bottom: 6px;
     display: inline-block;
   }
