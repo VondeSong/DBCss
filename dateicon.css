@@ -17,13 +17,8 @@
 }
 
 /*页面标题*/
-html[data-theme="light"] .ls-page-title span[data-ref^="Mon,"]::before,
-html[data-theme="light"] .ls-page-title span[data-ref^="Thu,"]::before,
-html[data-theme="light"] .ls-page-title span[data-ref^="Wed,"]::before,
-html[data-theme="light"] .ls-page-title span[data-ref^="Tue,"]::before,
-html[data-theme="light"] .ls-page-title span[data-ref^="Fri,"]::before,
-html[data-theme="light"] .ls-page-title span[data-ref^="Sat,"]::before,
-html[data-theme="light"] .ls-page-title span[data-ref^="Sun,"]::before {
+
+html[data-theme="light"] .is-journals .ls-page-title .block-title-wrap::before  {
   content: "";
   background-image: var(--19230045i2mageurl);
   background-size: 100%;
@@ -37,13 +32,7 @@ html[data-theme="light"] .ls-page-title span[data-ref^="Sun,"]::before {
   overflow: auto;
   margin-right: 0.6rem;
 }
-html[data-theme="dark"] .ls-page-title span[data-ref^="Mon,"]::before,
-html[data-theme="dark"] .ls-page-title span[data-ref^="Thu,"]::before,
-html[data-theme="dark"] .ls-page-title span[data-ref^="Wed,"]::before,
-html[data-theme="dark"] .ls-page-title span[data-ref^="Tue,"]::before,
-html[data-theme="dark"] .ls-page-title span[data-ref^="Fri,"]::before,
-html[data-theme="dark"] .ls-page-title span[data-ref^="Sat,"]::before,
-html[data-theme="dark"] .ls-page-title span[data-ref^="Sun,"]::before {
+html[data-theme="dark"] .is-journals .ls-page-title .block-title-wrap::before  {
   content: "";
   background-image: var(--19230045i2mageurl);
   background-size: 100%;
@@ -335,14 +324,12 @@ html[data-theme="dark"] [title^="Sun,"] span.page-icon {
   opacity: 0.71;
 }
 
-a[title^="Mon,"] span.page-title,
-a[title^="Thu,"] span.page-title,
-a[title^="Wed,"] span.page-title,
-a[title^="Tue,"] span.page-title,
-a[title^="Sat,"] span.page-title,
-a[title^="Sun,"] span.page-title,
-a[title^="Fri,"] span.page-title
-{
+li[title^="Mon,"] span.page-title,
+li[title^="Thu,"] span.page-title,
+li[title^="Wed,"] span.page-title,
+li[title^="Tue,"] span.page-title,
+li[title^="Sat,"] span.page-title,
+li[title^="Sun,"] span.page-title,
+li[title^="Fri,"] span.page-title {
   margin-left: -.09rem !important;
 }
-
