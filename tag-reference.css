@@ -86,23 +86,23 @@ a.tag::before{
 html[data-theme="light"] a.tag {
   color: #5783f7;
   opacity: 1;
-  font-size: 1em;
+  font-size: .9em;
 }
 html[data-theme="light"]:hover a.tag {
   color: #5783f7;
   opacity: 1;
-  font-size: 1em;
+  font-size: .9em;
 }
 html[data-theme="dark"] a.tag {
   color: #2b88d8;
   opacity: 1;
-  font-size: 1em;
+  font-size: .9em;
   
 }
 html[data-theme="dark"] a.tag:hover {
   color: #2b88d8;
   opacity: 1;
-  font-size: 1em; 
+  font-size: .9em; 
 }
 /*.references-blocks Linked Reference 中的标签不带阴影*/
 html[data-theme="light"] .references-blocks a.tag{
