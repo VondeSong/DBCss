@@ -75,7 +75,7 @@ div[title="Tip"] {
 .pinned div.is-paragraph {}
 
 html[data-theme="light"] .tip .text-lg {
-  margin-left: -9px;
+  margin-left: -10px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 16px;
@@ -94,7 +94,7 @@ html[data-theme="light"] .tip .text-lg {
 }
 
 html[data-theme="dark"] .tip .text-lg {
-  margin-left: -9px;
+  margin-left: -10px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 16px;
@@ -295,7 +295,7 @@ div[title="Pinned"] {
 
 html[data-theme="light"] .pinned .text-lg {
   font-family: "ZhuqueFangsong" !important;
-  margin-left: -9px;
+  margin-left: -10px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 16px;
@@ -315,7 +315,7 @@ html[data-theme="light"] .pinned .text-lg {
 }
 
 html[data-theme="dark"] .pinned .text-lg {
-  margin-left: -9px;
+  margin-left: -10px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 16px;
@@ -404,7 +404,7 @@ div[title="Warning"] {
 }
 
 html[data-theme="light"] .warning .text-lg {
-  margin-left: -9px;
+  margin-left: -10px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 16px;
@@ -464,7 +464,7 @@ html[data-theme="dark"] .warning .text-md {
 
 
 html[data-theme="dark"] .warning .text-lg {
-  margin-left: -9px;
+  margin-left: -10px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 16px;
