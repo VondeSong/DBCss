@@ -730,78 +730,95 @@ display: inline-block;
 
 /*caution 参考craft的caption*/
 html[data-theme="light"] div[class~="caution"] {
-color: inherit;
-font-family: inherit;
-border-radius: 6px;
-background-color: transparent;
-}
-
-html[data-theme="dark"] div[class~="caution"] {
-color: inherit;
-font-family: inherit;
-border-radius: 6px;
-background-color: transparent;
-
-}
-.caution .text-lg ul li,.caution .text-lg ol li{
-margin-top: var(--ullimarginTop);
-}
-.caution .text-lg ul li p,.caution .text-lg ol li p {
-color: inherit !important;
-
-}
-html[data-theme="light"] div[class~="caution"] a.tag {
- border-color: #1f2225 !important;
- color: #1f2225 !important;
-}
-html[data-theme="dark"]  div[class~="caution"] a.tag {
-border-color: #1f2225 !important;
-color: #1f2225 !important;
-}
-.caution svg path {
-fill: none;
-}
-
-div[title="Caution"] {
-position: relative;
-border: 0;
-width: 0 !important;
-}
-[title="Caution"].pr-4 {
-padding-right: 0 !important;
-}
-.caution div.is-paragraph {}
-
-html[data-theme="light"] .caution .text-lg {
-text-decoration-color: rgb(31, 34, 37);
-text-decoration-thickness: auto;
-color: rgb(31, 34, 37);
-font-size: 14px;
-font-weight: 300;
-font-style: normal;
-font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-display: block;
-line-height: 22px;
-white-space: pre-wrap;
-word-break: break-word;
-letter-spacing: -0.15px;
-transition: box-shadow 100ms ease-in-out, background-color 100ms ease-in-out, border 100ms ease-in-out;
-transform: translate3d(0px, 0px, 0px);
-border-radius: 4px;
-box-shadow: transparent 6px 0px 0px, transparent -6px 0px 0px;
-background-color: transparent;
-scroll-margin: 32px 0px;
-}
-
-html[data-theme="dark"] .caution .text-lg {
-
-
-}
-.caution .ml-4.text-lg {
-margin-left: 0 !important;
-}
-
-.caution.admonitionblock{
-padding: 0 !important; 
-margin: 0 !important;
-}
+  color: inherit;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: transparent;
+  }
+  
+  html[data-theme="dark"] div[class~="caution"] {
+  color: inherit;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: transparent;
+  
+  }
+  .caution .text-lg ul li,.caution .text-lg ol li{
+  margin-top: var(--ullimarginTop);
+  }
+  .caution .text-lg ul li p,.caution .text-lg ol li p {
+  color: inherit !important;
+  
+  }
+  html[data-theme="light"] div[class~="caution"] a.tag {
+   border-color: #1f2225 !important;
+   color: #1f2225 !important;
+  }
+  html[data-theme="dark"]  div[class~="caution"] a.tag {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  }
+  .caution svg path {
+  fill: none;
+  }
+  
+  div[title="Caution"] {
+  position: relative;
+  border: 0;
+  width: 0 !important;
+  }
+  [title="Caution"].pr-4 {
+  padding-right: 0 !important;
+  }
+  .caution div.is-paragraph {}
+  
+  html[data-theme="light"] .caution .text-lg {
+  text-decoration-color: rgb(31, 34, 37);
+  text-decoration-thickness: auto;
+  color: rgb(31, 34, 37);
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: 22px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  letter-spacing: -0.15px;
+  transition: box-shadow 100ms ease-in-out, background-color 100ms ease-in-out, border 100ms ease-in-out;
+  transform: translate3d(0px, 0px, 0px);
+  border-radius: 4px;
+  box-shadow: transparent 6px 0px 0px, transparent -6px 0px 0px;
+  background-color: transparent;
+  scroll-margin: 32px 0px;
+  }
+  
+  html[data-theme="dark"] .caution .text-lg {
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: auto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: block;
+    line-height: 22px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    letter-spacing: -0.15px;
+    transition: box-shadow 100ms ease-in-out, background-color 100ms ease-in-out, border 100ms ease-in-out;
+    transform: translate3d(0px, 0px, 0px);
+    border-radius: 4px;
+    box-shadow: transparent 6px 0px 0px, transparent -6px 0px 0px;
+    background-color: transparent;
+    scroll-margin: 32px 0px;
+  
+  }
+  .caution .ml-4.text-lg {
+  margin-left: 0 !important;
+  }
+  
+  .caution.admonitionblock{
+  padding: 0 !important; 
+  margin: 0 !important;
+  }
