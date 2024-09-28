@@ -1,0 +1,807 @@
+﻿﻿/*高级命令 块样式*/
+:root {
+  --advancedCommandsFont: 'tabler-icons';
+  --advancedCommandsIconFontSize: 1.1rem;
+  --advancedCommandsIcon_left: .8rem;
+  --advancedCommandsIcon_top: .8rem;
+  --advancedCommandsText: .95rem;
+  --advancedCommandsIconOpacty: 1;
+  --AdvancedBlocklineHeight: 24px;
+}
+
+
+/*QUOTE*/
+
+html[data-theme="dark"] blockquote {
+  border-left-color: #ffffff;
+  padding: 1px 12px 0 12px !important;
+  background-color: transparent !important;
+  color: var(--ls-primary-text-color) !important;
+  font-size: var(--ls-page-text-size);
+  line-height: var(--AdvancedBlocklineHeight);
+}
+
+html[data-theme="light"] blockquote {
+  background-color: transparent !important;
+  border-left-color: #35383a;
+  /*background-color: rgb(255, 255, 255);*/
+  font-size: var(--ls-page-text-size) !important;
+  padding: 1px 12px 0 12px !important;
+  color: rgba(31, 34, 37, 0.9) !important;
+  line-height: var(--AdvancedBlocklineHeight);
+}
+
+/*tip 高级命令*/
+html[data-theme="light"] div[class~="tip"] {
+  color: inherit;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: rgb(255,244,230);
+ /*box-shadow: rgb(230, 250, 243) 0px 2.5px 0px;*/
+}
+
+html[data-theme="dark"] div[class~="tip"] {
+  color: inherit;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: #382d1f;
+ /*box-shadow: rgb(31, 56, 49) 0px 2.5px 0px;*/
+}
+.tip .text-lg ul li,.tip .text-lg ol li{
+  margin-top: var(--ullimarginTop);
+}
+.tip .text-lg ul li p,.tip .text-lg ol li p {
+  color: inherit !important;
+ 
+}
+html[data-theme="light"] div[class~="tip"] a.tag {
+   border-color: rgb(172, 90, 87,.5) !important;
+   color: rgb(172, 90, 87,.8) !important;
+}
+html[data-theme="dark"]  div[class~="tip"] a.tag {
+  border-color: rgb(255, 201, 115,.5) !important;
+  color: rgb(255, 201, 115,.8) !important;
+}
+.tip svg path {
+  fill: none;
+}
+
+div[title="Tip"] {
+  position: relative;
+  border: 0;
+  width: 25px;
+}
+
+.pinned div.is-paragraph {}
+
+html[data-theme="light"] .tip .text-lg {
+  margin-left: -9px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  color: #8f5a13;
+  /*font-size: var(--ls-page-text-size);*/
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: #8f5a13;
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-variation-settings: "wght" 450;
+}
+
+html[data-theme="dark"] .tip .text-lg {
+  margin-left: -9px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  color: #ffc980;
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: #ffc980;
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  letter-spacing: -0.18px !important;
+  font-variation-settings: "wght" 450;
+
+}
+
+html[data-theme="light"] .tip b:first-child {
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
+  color: #8f5a13;
+  font-size: calc(var(--ls-page-text-size) + 0px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+html[data-theme="dark"] .tip b:first-child {
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
+  color: #ffc980;
+  font-size: calc(var(--ls-page-text-size) + 0px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+/*例子 EXAMPLE*/
+html[data-theme="light"] .pre-wrap-white-space {
+  /*color: rgba(31, 34, 37, 0.9);*/
+  color: #424c56 !important;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  padding: 12px 14px;
+  font-family: Sohne, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: var(--AdvancedBlocklineHeight);
+  font-size: var(--ls-page-text-size) !important;
+  background-color: #f0f1f3 !important;
+}
+
+html[data-theme="dark"] .pre-wrap-white-space {
+  /*color: rgba(31, 34, 37, 0.9);*/
+  color: #d5dee4 !important;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  padding: 12px 14px;
+  font-family: Sohne, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: var(--AdvancedBlocklineHeight);
+  font-size: var(--ls-page-text-size) !important;
+  background-color: #303233 !important;
+}
+
+html[data-theme="dark"] .pre-wrap-white-space {
+  background-color: #2a2a2b;
+}
+
+html[data-theme="light"] .pre-wrap-white-space {
+  /*background-color: rgb(244, 244, 244);*/
+  background-color: rgb(209, 213, 219, .3);
+
+}
+
+.pre-wrap-white-space::after {
+  /*background: url("https://api.onedrive.com/v1.0/shares/s!AlyPMEviU_SjhP45IHAmjzerYdmdZw/root/content") no-repeat transparent;
+  background-size: 28px;
+  width: 28px;
+  height: 24px;
+  bottom: 10px;
+  right: 10px;
+  content: '';
+  display: block;
+  position: absolute;*/
+}
+
+@font-face {
+  font-family: 方正字迹-曾正国楷体;
+  src: url('https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbHlQTUV2aVVfU2poWmd2elNYN3ZDOHFGRWU0Q2c_ZT1STGVubGs.ttf');
+}
+
+html[data-theme="light"] .flex.flex-row~.block-body>.is-paragraph {
+  color: var(--ls-primary-textParagraph-color);
+}
+html[data-theme="dark"] .flex.flex-row~.block-body>.is-paragraph {
+  color: var(--ls-primary-textParagraph-color);
+}
+html[data-theme="light"] .verse {
+  /*font-family: 方正字迹-曾正国楷体;*/
+  /*font-family: "ZhuqueFangsong";*/
+  /*background-color: rgb(209, 213, 219,.3);*/
+  background-color: rgb(225, 224, 199, .5);
+  /*background-color: var(--Is-example-bk,#f8f9f9 ) !important;*/
+  color: var(--Is-example-color, inherit);
+  border-radius: 4px;
+  /*box-shadow: 0 1px 1px rgb(111 119 125 / 25%);*/
+  /*font-size: 0.95em;*/
+  white-space: pre-wrap;
+  letter-spacing: 1px !important;
+  line-height: 160%;
+  /*border-bottom: var(--Is-example-border,0);*/
+  font-size: var(--ls-page-text-size);
+  /*padding-left: 12px;*/
+  padding: 12px;
+}
+
+html[data-theme="dark"] .verse {
+  /*font-family: 方正字迹-曾正国楷体;*/
+  /*font-family: 新宋体;*/
+  /*background-color: rgb(209, 213, 219,.3);*/
+  background-color: rgb(12 12 11 / 50%);
+  /*background-color: var(--Is-example-bk,#f8f9f9 ) !important;*/
+  color: var(--Is-example-color, inherit);
+  border-radius: 4px;
+  /*box-shadow: 0 1px 1px rgb(111 119 125 / 25%);*/
+  /*font-size: 0.95em;*/
+  white-space: pre-wrap;
+  letter-spacing: 1px !important;
+  line-height: 160%;
+  /*border-bottom: var(--Is-example-border,0);*/
+  font-size: var(--ls-page-text-size);
+  /*padding-left: 12px;*/
+  padding: 12px;
+}
+
+.verse::after {
+  /*background: url("https://api.onedrive.com/v1.0/shares/s!AlyPMEviU_SjhZgh6pHFU621R0PUtw/root/content") no-repeat transparent;
+  background-size: 40px;
+  width: 40px;
+  height: 75px;
+  bottom: 0px;
+  right: 0px;
+  content: '';
+  display: block;
+  position: absolute;*/
+}
+/*高级块的块间距*/
+.admonitionblock {
+  margin: .4rem 0 !important;
+ 
+}
+:root {
+  --ullimarginTop: 5px;
+ 
+}
+
+
+/*pinned 高级命令*/
+html[data-theme="light"] div[class~="pinned"] {
+  
+  color: inherit;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: #e6faf3;
+ /*box-shadow: rgb(230, 250, 243) 0px 2.5px 0px;*/
+}
+
+html[data-theme="dark"] div[class~="pinned"] {
+  color: inherit;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: rgb(31, 56, 49);
+  /*box-shadow: rgb(31, 56, 49) 0px 2.5px 0px;*/
+}
+.pinned .text-lg ul li,.pinned .text-lg ol li{
+  margin-top: var(--ullimarginTop);
+}
+.pinned .text-lg ul li p,.pinned .text-lg ol li p {
+  color: inherit !important;
+ 
+}
+
+html[data-theme="light"] div[class~="pinned"] a.tag {
+ /*border-color: #1fb141 !important;*/
+ color: rgb(16 118 85 / 59%)!important;
+}
+html[data-theme="dark"] div[class~="pinned"] a.tag {
+  /*border-color: #1fb141 !important;*/
+  color: rgb(128 255 220 / 56%)!important;
+ }
+.pinned svg path {
+  fill: none;
+}
+
+div[title="Pinned"] {
+  position: relative;
+  border: 0;
+  width: 25px;
+}
+
+.pinned div.is-paragraph {}
+
+html[data-theme="light"] .pinned .text-lg {
+  font-family: "ZhuqueFangsong" !important;
+  margin-left: -9px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  color: rgb(16, 118, 85);
+  /*font-size: var(--ls-page-text-size);*/
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: rgb(16, 118, 85);
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-variation-settings: "wght" 450;
+  box-shadow: rgb(230, 250, 243) 0px 2.5px 0px;
+}
+
+html[data-theme="dark"] .pinned .text-lg {
+  margin-left: -9px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  color: #80ffdc;
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: rgb(128, 255, 220);
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  letter-spacing: -0.18px !important;
+  font-variation-settings: "wght" 450;
+  box-shadow: rgb(31, 56, 49) 0px 2.5px 0px;
+
+}
+
+html[data-theme="light"] .pinned .is-paragraph:first-child b:first-child {
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
+  color: rgb(21, 89, 68);
+  font-size: calc(var(--ls-page-text-size) + 0px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+html[data-theme="dark"] .pinned .is-paragraph:first-child b:first-child {
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
+  color: #acffe8;
+  font-size: calc(var(--ls-page-text-size) + 0px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+
+
+
+
+/*warning 高级命令*/
+html[data-theme="light"] div[class~="warning"] {
+  font-family: inherit;
+  border-radius: 6px;
+  /*color: #da7396 !important;*/
+  background-color: #fde6ea;
+  /*box-shadow: rgb(230, 250, 243) 0px 2.5px 0px;*/
+  
+}
+
+html[data-theme="dark"] div[class~="warning"] {
+  color: inherit;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: rgb(56, 37, 41);
+  /*box-shadow: rgb(31, 56, 49) 0px 2.5px 0px;*/
+}
+.warning .text-lg ul li,.warning .text-lg ol li{
+  margin-top: var(--ullimarginTop);
+}
+.warning .text-lg ul li p,.warning .text-lg ol li p {
+  color: inherit !important;
+  
+}
+html[data-theme="light"] div[class~="warning"] a.tag {
+  /*border-color: #1fb141 !important;*/
+  color: rgb(191 148 155)!important;
+}
+html[data-theme="dark"] div[class~="warning"] a.tag {
+  /*border-color: #1fb141 !important;*/
+  color: rgb(165, 117, 128)!important;
+}
+.warning svg path {
+  fill: none;
+}
+
+div[title="Warning"] {
+  position: relative;
+  border: 0;
+  width: 25px;
+}
+/*距离文本最近的一层，字间距生效*/
+.warning div.is-paragraph {
+  letter-spacing: -0.18px !important;
+}
+
+html[data-theme="light"] .warning .text-lg {
+  margin-left: -9px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  color: rgb(135, 20, 40) !important;
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: rgb(135, 20, 40) !important;
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  letter-spacing: -0.18px !important;
+  font-variation-settings: "wght" 450;
+}
+
+/*兼容插件页面的waring*/
+html[data-theme="light"] .warning .text-md {
+  /*margin-left:-9px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30px;*/
+  color: rgb(135, 20, 40) !important;
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: rgb(135, 20, 40) !important;
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  letter-spacing: -0.18px;
+  font-variation-settings: "wght" 450;
+}
+
+/*兼容插件页面的waring*/
+html[data-theme="dark"] .warning .text-md {
+  /*margin-left:-9px ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30px;*/
+  color: rgb(255, 159, 180) !important;
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: rgb(255, 159, 180) !important;
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  letter-spacing: -0.18px;
+  font-variation-settings: "wght" 450;
+}
+
+
+html[data-theme="dark"] .warning .text-lg {
+  margin-left: -9px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  color: rgb(255, 159, 180);
+  font-size: var(--ls-page-text-size) !important;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration-color: rgb(255, 159, 180);
+  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: block;
+  line-height: var(--AdvancedBlocklineHeight);
+  white-space: pre-wrap;
+  word-break: break-word;
+  letter-spacing: -0.18px !important;
+  font-variation-settings: "wght" 450;
+
+}
+
+html[data-theme="light"] .warning b:first-child {
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
+  /*color: #f93957;*/
+  font-size: calc(var(--ls-page-text-size) + 0px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+  color: rgb(249, 57, 87) !important;
+  background-image: linear-gradient(90deg, rgb(255, 113, 0) 0%, rgb(243, 0, 173) 100%);
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+}
+
+html[data-theme="dark"] .warning b:first-child {
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
+  color: rgb(255, 119, 132);
+  transition: box-shadow 0.3s ease 0s;
+  background-image: linear-gradient(90deg, rgb(255, 102, 86) 0%, rgb(255, 135, 178) 100%);
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-box-decoration-break: clone !important;
+  transition: box-shadow 0.3s ease 0s;
+  font-size: calc(var(--ls-page-text-size) + 0px) !important;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+/*插件页面的顶部的警告 隐藏 并且调整下面展示的插件内容的高度*/
+[label="plugins-dashboard"] .flex.flex-row.admonitionblock.align-items.warning {
+  display: none;
+}
+.cp__plugins-item-lists {
+  max-height:74vh;
+}
+/*高级命令下的双链 字体颜色和父元素保持一致*/
+blockquote a.page-ref {
+  color: inherit !important;
+}
+div[class~="warning"] .page-ref,div[class~="note"] .page-ref,div[class~="important"] .page-ref,div[class~="pinned"] .page-ref,div[class~="note"] .page-ref,div[class~="tip"] .page-ref
+,div[class~="verse"] .page-ref,
+[data-refs-self*="$example"] .page-ref
+  {
+  color: inherit !important;
+}
+/*important 高级命令*/
+html[data-theme="light"] div[class~="important"] {
+color: inherit;
+font-family: inherit;
+border-radius: 6px;
+background-color: rgb(255, 240, 250);
+/*box-shadow: rgb(230, 250, 243) 0px 2.5px 0px;*/
+}
+
+html[data-theme="dark"] div[class~="important"] {
+color: inherit;
+font-family: inherit;
+border-radius: 6px;
+background-color: #382a33;
+/*box-shadow: rgb(31, 56, 49) 0px 2.5px 0px;*/
+}
+.important .text-lg ul li,.important .text-lg ol li{
+margin-top: var(--ullimarginTop);
+}
+.important .text-lg ul li p,.important .text-lg ol li p {
+color: inherit !important;
+
+}
+html[data-theme="light"] div[class~="important"] a.tag {
+ border-color: #c90080 !important;
+ color: #c90080 !important;
+}
+html[data-theme="dark"]  div[class~="important"] a.tag {
+border-color: #ffbae5 !important;
+color: #ffbae5 !important;
+}
+.important svg path {
+fill: none;
+}
+
+div[title="Important"] {
+position: relative;
+border: 0;
+width: 25px;
+}
+
+.important div.is-paragraph {}
+
+html[data-theme="light"] .important .text-lg {
+margin-left: -9px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 16px;
+color: #c90080;
+/*font-size: var(--ls-page-text-size);*/
+font-size: var(--ls-page-text-size) !important;
+font-weight: 400;
+font-style: normal;
+text-decoration-color: #c90080;
+font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+display: block;
+line-height: var(--AdvancedBlocklineHeight);
+white-space: pre-wrap;
+word-break: break-word;
+font-variation-settings: "wght" 450;
+}
+
+html[data-theme="dark"] .important .text-lg {
+margin-left: -9px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 16px;
+color: #ffbae5;
+font-size: var(--ls-page-text-size) !important;
+font-weight: 400;
+font-style: normal;
+text-decoration-color: #ffbae5;
+font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+display: block;
+line-height: var(--AdvancedBlocklineHeight);
+white-space: pre-wrap;
+word-break: break-word;
+letter-spacing: -0.18px !important;
+font-variation-settings: "wght" 450;
+
+}
+
+html[data-theme="light"] .important b:first-child {
+font-weight: 700;
+font-variation-settings: "wght" 700;
+color: #c90080;
+font-size: calc(var(--ls-page-text-size) + 0px) !important;
+margin-bottom: 6px;
+display: inline-block;
+}
+
+html[data-theme="dark"] .important b:first-child {
+font-weight: 700;
+font-variation-settings: "wght" 700;
+color: #ffd2ee;
+font-size: calc(var(--ls-page-text-size) + 0px) !important;
+margin-bottom: 6px;
+display: inline-block;
+}
+
+/*note 高级命令*/
+html[data-theme="light"] div[class~="note"] {
+color: inherit;
+font-family: inherit;
+border-radius: 6px;
+background-color: #eff5ff;
+/*box-shadow: rgb(230, 250, 243) 0px 2.5px 0px;*/
+}
+
+html[data-theme="dark"] div[class~="note"] {
+color: inherit;
+font-family: inherit;
+border-radius: 6px;
+background-color: #1f2d38;
+/*box-shadow: rgb(31, 56, 49) 0px 2.5px 0px;*/
+}
+.note .text-lg ul li,.note .text-lg ol li{
+margin-top: var(--ullimarginTop);
+}
+.note .text-lg ul li p,.note .text-lg ol li p {
+color: inherit !important;
+
+}
+html[data-theme="light"] div[class~="note"] a.tag {
+ border-color: #0056d7 !important;
+ color: #0056d7 !important;
+}
+html[data-theme="dark"]  div[class~="note"] a.tag {
+border-color: #80caff !important;
+color: #80caff !important;
+}
+.note svg path {
+fill: none;
+}
+
+div[title="Note"] {
+position: relative;
+border: 0;
+width: 25px;
+}
+
+.note div.is-paragraph {}
+
+html[data-theme="light"] .note .text-lg {
+margin-left: -9px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 16px;
+color: #0056d7;
+/*font-size: var(--ls-page-text-size);*/
+font-size: var(--ls-page-text-size) !important;
+font-weight: 400;
+font-style: normal;
+text-decoration-color: #0056d7;
+font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+display: block;
+line-height: var(--AdvancedBlocklineHeight);
+white-space: pre-wrap;
+word-break: break-word;
+font-variation-settings: "wght" 450;
+}
+
+html[data-theme="dark"] .note .text-lg {
+margin-left: -9px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 16px;
+color: #80caff;
+font-size: var(--ls-page-text-size) !important;
+font-weight: 400;
+font-style: normal;
+text-decoration-color: #80caff;
+font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+display: block;
+line-height: var(--AdvancedBlocklineHeight);
+white-space: pre-wrap;
+word-break: break-word;
+letter-spacing: -0.18px !important;
+font-variation-settings: "wght" 450;
+
+}
+
+html[data-theme="light"] .note b:first-child {
+font-weight: 700;
+font-variation-settings: "wght" 700;
+color: #0056d7;
+font-size: calc(var(--ls-page-text-size) + 0px) !important;
+margin-bottom: 6px;
+display: inline-block;
+}
+
+html[data-theme="dark"] .note b:first-child {
+font-weight: 700;
+font-variation-settings: "wght" 700;
+color: #acddff;
+font-size: calc(var(--ls-page-text-size) + 0px) !important;
+margin-bottom: 6px;
+display: inline-block;
+}
+
+/*caution 参考craft的caption*/
+html[data-theme="light"] div[class~="caution"] {
+color: inherit;
+font-family: inherit;
+border-radius: 6px;
+background-color: transparent;
+}
+
+html[data-theme="dark"] div[class~="caution"] {
+color: inherit;
+font-family: inherit;
+border-radius: 6px;
+background-color: transparent;
+
+}
+.caution .text-lg ul li,.caution .text-lg ol li{
+margin-top: var(--ullimarginTop);
+}
+.caution .text-lg ul li p,.caution .text-lg ol li p {
+color: inherit !important;
+
+}
+html[data-theme="light"] div[class~="caution"] a.tag {
+ border-color: #1f2225 !important;
+ color: #1f2225 !important;
+}
+html[data-theme="dark"]  div[class~="caution"] a.tag {
+border-color: #1f2225 !important;
+color: #1f2225 !important;
+}
+.caution svg path {
+fill: none;
+}
+
+div[title="Caution"] {
+position: relative;
+border: 0;
+width: 0 !important;
+}
+[title="Caution"].pr-4 {
+padding-right: 0 !important;
+}
+.caution div.is-paragraph {}
+
+html[data-theme="light"] .caution .text-lg {
+text-decoration-color: rgb(31, 34, 37);
+text-decoration-thickness: auto;
+color: rgb(31, 34, 37);
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+display: block;
+line-height: 22px;
+white-space: pre-wrap;
+word-break: break-word;
+letter-spacing: -0.15px;
+transition: box-shadow 100ms ease-in-out, background-color 100ms ease-in-out, border 100ms ease-in-out;
+transform: translate3d(0px, 0px, 0px);
+border-radius: 4px;
+box-shadow: transparent 6px 0px 0px, transparent -6px 0px 0px;
+background-color: transparent;
+scroll-margin: 32px 0px;
+}
+
+html[data-theme="dark"] .caution .text-lg {
+
+
+}
+.caution .ml-4.text-lg {
+margin-left: 0 !important;
+}
+
+.caution.admonitionblock{
+padding: 0 !important; 
+margin: 0 !important;
+}
