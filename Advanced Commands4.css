@@ -75,10 +75,10 @@ div[title="Tip"] {
 .pinned div.is-paragraph {}
 
 html[data-theme="light"] .tip .text-lg {
-  margin-left: -10px;
+  margin-left: -11px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 16px;
+  margin-right: 14px;
   color: #8f5a13;
   /*font-size: var(--ls-page-text-size);*/
   font-size: var(--ls-page-text-size) !important;
@@ -94,10 +94,10 @@ html[data-theme="light"] .tip .text-lg {
 }
 
 html[data-theme="dark"] .tip .text-lg {
-  margin-left: -10px;
+  margin-left: -11px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 16px;
+  margin-right: 14px;
   color: #ffc980;
   font-size: var(--ls-page-text-size) !important;
   font-weight: 400;
@@ -295,10 +295,10 @@ div[title="Pinned"] {
 
 html[data-theme="light"] .pinned .text-lg {
   font-family: "ZhuqueFangsong" !important;
-  margin-left: -10px;
+  margin-left: -11px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 16px;
+  margin-right: 14px;
   color: rgb(16, 118, 85);
   /*font-size: var(--ls-page-text-size);*/
   font-size: var(--ls-page-text-size) !important;
@@ -315,10 +315,10 @@ html[data-theme="light"] .pinned .text-lg {
 }
 
 html[data-theme="dark"] .pinned .text-lg {
-  margin-left: -10px;
+  margin-left: -11px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 16px;
+  margin-right: 14px;
   color: #80ffdc;
   font-size: var(--ls-page-text-size) !important;
   font-weight: 400;
@@ -404,10 +404,10 @@ div[title="Warning"] {
 }
 
 html[data-theme="light"] .warning .text-lg {
-  margin-left: -10px;
+  margin-left: -11px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 16px;
+  margin-right: 14px;
   color: rgb(135, 20, 40) !important;
   font-size: var(--ls-page-text-size) !important;
   font-weight: 400;
@@ -464,10 +464,10 @@ html[data-theme="dark"] .warning .text-md {
 
 
 html[data-theme="dark"] .warning .text-lg {
-  margin-left: -10px;
+  margin-left: -11px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 16px;
+  margin-right: 14px;
   color: rgb(255, 159, 180);
   font-size: var(--ls-page-text-size) !important;
   font-weight: 400;
@@ -575,7 +575,7 @@ html[data-theme="light"] .important .text-lg {
 margin-left: -9px;
 margin-top: 10px;
 margin-bottom: 10px;
-margin-right: 16px;
+margin-right: 14px;
 color: #c90080;
 /*font-size: var(--ls-page-text-size);*/
 font-size: var(--ls-page-text-size) !important;
@@ -594,7 +594,7 @@ html[data-theme="dark"] .important .text-lg {
 margin-left: -9px;
 margin-top: 10px;
 margin-bottom: 10px;
-margin-right: 16px;
+margin-right: 14px;
 color: #ffbae5;
 font-size: var(--ls-page-text-size) !important;
 font-weight: 400;
@@ -675,7 +675,7 @@ html[data-theme="light"] .note .text-lg {
 margin-left: -9px;
 margin-top: 10px;
 margin-bottom: 10px;
-margin-right: 16px;
+margin-right: 14px;
 color: #0056d7;
 /*font-size: var(--ls-page-text-size);*/
 font-size: var(--ls-page-text-size) !important;
@@ -694,7 +694,7 @@ html[data-theme="dark"] .note .text-lg {
 margin-left: -9px;
 margin-top: 10px;
 margin-bottom: 10px;
-margin-right: 16px;
+margin-right: 14px;
 color: #80caff;
 font-size: var(--ls-page-text-size) !important;
 font-weight: 400;
