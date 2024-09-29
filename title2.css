@@ -1,39 +1,102 @@
-﻿/*标题变量*/
-:root{
---title-line-height:1.2;
---title-letter-spacing: 0.045em;
+
+:root {
+  --titleColor: rgb(31, 34, 37);
 }
-html[data-theme="light"] .ls-block :is(h1, h2, h3, h4, h5)::after {
-  margin-left: 0.5rem;
-  /* font-family: var(--ct-code-font-family);*/
-  font-size: 0.6rem;
-  font-style: var(--ct-inline-code-font-style) !important;
-  border-radius: var(--ct-inline-code-border-radius);
-  padding: var(--ct-inline-code-padding) !important;
-  /*background-color: var(--Is-h1-bk,#e9ecef);*/
-  background: transparent;
-  color: inherit;
-  vertical-align: middle;
-  /*原始是0.3*/
-  opacity: 0.3;
+.editor-inner .h1.uniline-block, .ls-block h1 {
+    width: 100%;
+    color: var(--titleColor);
+    font-size: 23px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: block;
+    line-height: 28px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    letter-spacing: -0.3px;
+    font-variation-settings: "wght" 750;
+    
+}
+.editor-inner .h2.uniline-block, .ls-block h2 {
+    width: 100%;
+    color: var(--titleColor);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: block;
+    line-height: 24px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    letter-spacing: -0.3px;
+  
+}
+.editor-inner .h3.uniline-block, .ls-block h3 {
+    width: 100%;
+    color: var(--titleColor);
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: block;
+    line-height: 22px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    letter-spacing: -0.4px;
+    font-variation-settings: "wght" 650;
+}
+.editor-inner .h4.uniline-block, .ls-block h4 {
+    width: 100%;
+    color: var(--titleColor);
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: block;
+    line-height: 20px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    letter-spacing: -0.4px;
+    font-variation-settings: "wght" 650;
 }
 
-html[data-theme="dark"] .ls-block :is(h1, h2, h3, h4, h5)::after {
-  margin-left: 0.5rem;
-  /* font-family: var(--ct-code-font-family);*/
-  font-size: 0.6rem;
-  font-style: var(--ct-inline-code-font-style) !important;
-  border-radius: var(--ct-inline-code-border-radius);
-  padding: var(--ct-inline-code-padding) !important;
-  background-color: transparent;
-  color: inherit;
-  vertical-align: middle;
-  /*原始是0.3*/
-  opacity: 0.3;
+.ls-block :is(h1) {
+  /*margin-bottom: .5rem;*/
+  margin-top: .7rem !important;
+  padding-bottom: 0 !important;
 }
-
-.ls-block :is(h1, h2, h3, h4, h5):hover::after {
-  opacity: 1;
+.editor-inner .uniline-block:is(.h1) {
+  margin-top: .9rem !important;
+}
+ .ls-block :is(h2) {
+  margin-bottom: .5rem !important;
+  margin-top: .5rem !important;
+  padding-bottom: 0 !important;
+}
+.editor-inner .uniline-block:is(.h2){
+  margin-bottom: .5rem !important;
+  margin-top: .7rem !important;
+  padding-bottom: 0 !important;
+}
+ .ls-block :is(h3) {
+  margin-bottom: .5rem !important;
+  margin-top: .25rem !important;
+  padding-bottom: 0 !important;
+}
+.editor-inner .uniline-block:is(.h3) {
+  margin-bottom: .5rem !important;
+  margin-top: .35rem !important;
+  padding-bottom: 0 !important;
+}
+.ls-block :is(h4) {
+  margin-bottom: .5rem !important;
+  margin-top: .1rem !important;
+  padding-bottom: 0 !important;
+}
+.editor-inner .uniline-block:is(.h4){
+  margin-bottom: .5rem !important;
+  margin-top: .1rem !important;
+  padding-bottom: 0 !important;
 }
 
 .ls-block h1::after {
@@ -55,259 +118,17 @@ html[data-theme="dark"] .ls-block :is(h1, h2, h3, h4, h5)::after {
 .ls-block h5::after {
   content: "h5";
 }
-
-.edit-input-wrapper .editing {
-  color: red !important;
+.ls-block :is(h1, h2, h3, h4, h5)::after {
+  margin-left: 3rem;
+  /* font-family: var(--ct-code-font-family);*/
+  font-size: 0.6rem;
+  /*background-color: var(--Is-h1-bk,#e9ecef);*/
+  background: transparent;
+  color: inherit;
+  vertical-align: middle;
+  /*原始是0.3*/
+  opacity: 0.15;
 }
-
-.page-title-sizer-wrapper>.title {
-  letter-spacing: 3px !important;
-}
-
-html[data-theme="light"] .page-title-sizer-wrapper .edit-input-wrapper.editing {
-
-  background-color: rgb(247, 246, 254);
-}
-
-/*页面标题*/
-html[data-theme="light"] h1.title {
-  color: var(--ls-title-text-color) !important;
-  font-size: var(--ls-page-title-size) !important;
-  font-weight: 600;
-  font-style: normal;
-  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  white-space: pre-wrap;
-  word-break: break-word;
-  letter-spacing: 4px !important;
-  font-variation-settings: "wght" 750;
-}
-
-html[data-theme="dark"] h1.title {
-  color: var(--ls-title-text-color) !important;
-  font-size: var(--ls-page-title-size) !important;
-  font-weight: 600;
-  font-style: normal;
-  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  white-space: pre-wrap;
-  word-break: break-word;
-  letter-spacing: 4px !important;
-  font-variation-settings: "wght" 750;
-}
-
-/*标题编辑模式*/
-html[data-theme="light"] #main-content-container .page-title-sizer-wrapper input[type=password],
-html[data-theme="light"] #main-content-container .page-title-sizer-wrapper input[type=text] {
-  color: var(--ls-title-text-color) !important;
-  font-size: var(--ls-page-title-size) !important;
-  font-weight: 600;
-  font-style: normal;
-  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  white-space: pre-wrap;
-  word-break: break-word;
-  letter-spacing: 3px !important;
-  font-variation-settings: "wght" 750;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-html[data-theme="dark"] #main-content-container .page-title-sizer-wrapper input[type=password],
-html[data-theme="dark"] #main-content-container .page-title-sizer-wrapper input[type=text] {
-  color: var(--ls-title-text-color) !important;
-  font-size: var(--ls-page-title-size) !important;
-  font-weight: 600;
-  font-style: normal;
-  font-family: Inter, system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  white-space: pre-wrap;
-  word-break: break-word;
-  letter-spacing: 3px !important;
-  font-variation-settings: "wght" 750;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/*.editor-inner .uniline-block:is(.h1,.h2,.h3), .ls-block :is(h1,h2,h3) {
-    border-bottom:0 !important;
-    padding-bottom: 0 !important;
-   
-  }*/
-
-.editor-inner .uniline-block:is(.h1, .h2),
-.ls-block :is(h1, h2) {}
-
-/* 标题*/
-/*标题中的双链颜色和标题保持一致*/
-.ls-block h1 a.page-ref,
-.editor-inner .uniline-block.h1 a.page-ref,
-.ls-block h2 a.page-ref,
-.editor-inner .uniline-block.h2 a.page-ref,
- .ls-block h3 a.page-ref,
- .editor-inner .uniline-block.h3 a.page-ref,
- .ls-block h4 a.page-ref,
- .editor-inner .uniline-block.h4 a.page-ref,
-.ls-block h5 a.page-ref,
-.editor-inner .uniline-block.h5 a.page-ref,
-.ls-block h6 a.page-ref,
- .editor-inner .uniline-block.h6 a.page-ref
-{
-  color: inherit !important;
-}
-
-
-html[data-theme="light"] .ls-block h1,
-html[data-theme="light"] .editor-inner .uniline-block.h1 {
-
- /*font-size: 140% !important;
-  border-bottom: 0px;
-  color: #000000 !important;
-  font-weight: 550;
-  letter-spacing: 3px;*/
-   /*line-height: var(--title-line-height);*/
-  font-size: 138% !important;
-  border-bottom: 0px;
-  color: #000 !important;
-  font-weight: 700;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-
-html[data-theme="dark"] .ls-block h1,
-html[data-theme="dark"] .editor-inner .uniline-block.h1 {
- /*font-size: 140% !important;
-  border-bottom: 0px;
-  color: #ffffff;
-  font-weight: 550;
-  letter-spacing: 3px;*/
-    /*line-height: var(--title-line-height);*/
-  font-size: 138% !important;
-  border-bottom: 0px;
-  color: #fff !important;
-  font-weight: 700;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="light"] .ls-block h2,
-html[data-theme="light"] .editor-inner .uniline-block.h2 {
-  /*font-size: 130% !important;
-  border-bottom: 0px;
-  letter-spacing: 1.5px;
-  font-weight: 550;
-  color: #0053b8;*/
-  font-size: 133% !important;
-  border-bottom: 0px;
-  color: #000000de !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="dark"] .ls-block h2,
-html[data-theme="dark"] .editor-inner .uniline-block.h2 {
-/*font-size: 130% !important;
-  border-bottom: 0px;
-  letter-spacing: 1.5px;
-  font-weight: 550;
-  color: #5eb4ff;*/
-  font-size: 133% !important;
-  border-bottom: 0px;
-  color: #ffffffda !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="light"] .ls-block h3,
-html[data-theme="light"] .editor-inner .uniline-block.h3 {
-  /*font-size: 120% !important;
-  color: #007f31;
-  letter-spacing: 1px;
-  font-weight: 530;*/
-  font-size: 126% !important;
-  border-bottom: 0px;
-  color: #77954d !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="dark"] .ls-block h3,
-html[data-theme="dark"] .editor-inner .uniline-block.h3 {
- /*font-size: 120% !important;
-  color: #6bdd9a;
-  letter-spacing: 1px;
-  font-weight: 530;*/
-  font-size: 126% !important;
-  border-bottom: 0px;
-  color: #a7c080 !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="light"] .ls-block h4,
-html[data-theme="light"] .editor-inner .uniline-block.h4 {
-  /*font-size: 110% !important;
-  color: #ad7a03;
-  font-weight: 510;*/
-  font-size: 119% !important;
-  border-bottom: 0px;
-  color: #ba7c38 !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="dark"] .ls-block h4,
-html[data-theme="dark"] .editor-inner .uniline-block.h4 {
- /*font-size: 110% !important;
-  color: #fcca54;
-  font-weight: 510;*/
-  font-size: 119% !important;
-  border-bottom: 0px;
-  color: #dbbc7f !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal ;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="light"] .ls-block h5,
-html[data-theme="light"] .editor-inner .uniline-block.h5 {
- /*font-size: 110% !important;
-  color: #623497;
-  font-weight: 500;*/
-  font-size: 110% !important;
-  border-bottom: 0px;
-  color: #623497 !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-html[data-theme="dark"] .ls-block h5,
-html[data-theme="dark"] .editor-inner .uniline-block.h5 {
- /*font-size: 110% !important;
-  color: #c0a8e1;
-  font-weight: 500;*/
-  font-size: 110% !important;
-  border-bottom: 0px;
-  color: #c0a8e1 !important;
-  font-weight: 600;
-  font-family: var(--font-title-default);
-  font-style: normal;
-  letter-spacing: var(--title-letter-spacing);
-}
-
-.ls-block h6,
-.editor-inner .uniline-block.h6 {
-  font-size: 100% !important;
+.editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2){
+  border-color: rgb(226, 226, 226, .35);
 }
