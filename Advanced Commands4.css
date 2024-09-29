@@ -1,4 +1,4 @@
-﻿﻿/*高级命令 块样式*/
+﻿/*高级命令 块样式*/
 :root {
   --advancedCommandsFont: 'tabler-icons';
   --advancedCommandsIconFontSize: 1.1rem;
@@ -12,7 +12,7 @@
 
 /*QUOTE*/
 
-html[data-theme="dark"] blockquote {
+html[data-theme="dark"] .block-content-or-editor-wrap[data-node-type=quote], html[data-theme="dark"] blockquote {
   border-left-color: #ffffff;
   padding: 1px 12px 0 12px !important;
   background-color: transparent !important;
@@ -21,7 +21,7 @@ html[data-theme="dark"] blockquote {
   line-height: var(--AdvancedBlocklineHeight);
 }
 
-html[data-theme="light"] blockquote {
+html[data-theme="light"] .block-content-or-editor-wrap[data-node-type=quote],html[data-theme="light"]  blockquote {
   background-color: transparent !important;
   border-left-color: #35383a;
   /*background-color: rgb(255, 255, 255);*/
