@@ -14,7 +14,7 @@
 
 html[data-theme="dark"] .block-content-or-editor-wrap[data-node-type=quote], html[data-theme="dark"] blockquote {
   border-left-color: #ffffff;
-  padding: 1px 12px 0 12px !important;
+  padding: 0px 12px 0 12px !important;
   background-color: transparent !important;
   color: var(--ls-primary-text-color) !important;
   font-size: var(--ls-page-text-size);
@@ -26,7 +26,7 @@ html[data-theme="light"] .block-content-or-editor-wrap[data-node-type=quote],htm
   border-left-color: #35383a;
   /*background-color: rgb(255, 255, 255);*/
   font-size: var(--ls-page-text-size) !important;
-  padding: 1px 12px 0 12px !important;
+  padding: 0px 12px 0 12px !important;
   color: rgba(31, 34, 37, 0.9) !important;
   line-height: var(--AdvancedBlocklineHeight);
 }
