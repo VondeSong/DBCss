@@ -1,15 +1,11 @@
 
 :root {
- 
     --lightlighttitleColor: rgb(31, 34, 37);
     --lightborder-color:rgb(226, 226, 226,.35);
-
-
     --darklighttitleColor: #FFFFFF;
     --darkborder-color:rgb(53 53 53 / 35%);
-
 }
-html[data-theme="light"] .editor-inner .h1.uniline-block, html[data-theme="light"].ls-block h1 {
+html[data-theme="light"] .editor-inner .h1.uniline-block, html[data-theme="light"] .ls-block h1 {
     width: 100%;
     color: var(--lighttitleColor);
     font-size: 23px;
@@ -66,7 +62,7 @@ html[data-theme="light"] .editor-inner .h4.uniline-block, html[data-theme="light
     letter-spacing: -0.4px;
     font-variation-settings: "wght" 650;
 }
-html[data-theme="dark"] .editor-inner .h1.uniline-block, html[data-theme="dark"].ls-block h1 {
+html[data-theme="dark"] .editor-inner .h1.uniline-block, html[data-theme="dark"] .ls-block h1 {
   width: 100%;
   color: var(--darklighttitleColor);
   font-size: 23px;
@@ -193,9 +189,9 @@ html[data-theme="dark"] .editor-inner .h4.uniline-block, html[data-theme="dark"]
   /*原始是0.3*/
   opacity: 0.15;
 }
-html[data-theme="light"] .editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2){
+html[data-theme="light"] .editor-inner .uniline-block:is(.h1,.h2), html[data-theme="light"].ls-block :is(h1,h2){
   border-color: var(--lightborder-color);
 }
-html[data-theme="dark"] .editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2){
+html[data-theme="dark"] .editor-inner .uniline-block:is(.h1,.h2), html[data-theme="dark"].ls-block :is(h1,h2){
   border-color: var(--darkborder-color);
 }
