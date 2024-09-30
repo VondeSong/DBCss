@@ -1,4 +1,4 @@
-﻿﻿/*高级命令 块样式*/
+/*高级命令 块样式*/
 :root {
   --advancedCommandsFont: 'tabler-icons';
   --advancedCommandsIconFontSize: 1.1rem;
@@ -75,7 +75,7 @@ div[title="Tip"] {
 .pinned div.is-paragraph {}
 
 html[data-theme="light"] .tip .text-lg {
-  
+  margin-left: 14.5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 14px;
@@ -94,7 +94,7 @@ html[data-theme="light"] .tip .text-lg {
 }
 
 html[data-theme="dark"] .tip .text-lg {
-  
+  margin-left: 14.5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 14px;
@@ -295,7 +295,7 @@ div[title="Pinned"] {
 
 html[data-theme="light"] .pinned .text-lg {
   font-family: "ZhuqueFangsong" !important;
-  
+  margin-left: 14.5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 14px;
@@ -315,7 +315,7 @@ html[data-theme="light"] .pinned .text-lg {
 }
 
 html[data-theme="dark"] .pinned .text-lg {
-  
+  margin-left: 14.5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 14px;
@@ -404,7 +404,7 @@ div[title="Warning"] {
 }
 
 html[data-theme="light"] .warning .text-lg {
-  
+  margin-left: 14.5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 14px;
@@ -464,7 +464,7 @@ html[data-theme="dark"] .warning .text-md {
 
 
 html[data-theme="dark"] .warning .text-lg {
-  
+  margin-left: 14.5px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 14px;
@@ -572,7 +572,7 @@ width: 25px;
 .important div.is-paragraph {}
 
 html[data-theme="light"] .important .text-lg {
-
+margin-left: 14.5px;
 margin-top: 10px;
 margin-bottom: 10px;
 margin-right: 14px;
@@ -591,7 +591,7 @@ font-variation-settings: "wght" 450;
 }
 
 html[data-theme="dark"] .important .text-lg {
-
+margin-left: 14.5px;
 margin-top: 10px;
 margin-bottom: 10px;
 margin-right: 14px;
@@ -672,7 +672,7 @@ width: 25px;
 .note div.is-paragraph {}
 
 html[data-theme="light"] .note .text-lg {
-
+margin-left: 14.5px;
 margin-top: 10px;
 margin-bottom: 10px;
 margin-right: 14px;
@@ -691,7 +691,7 @@ font-variation-settings: "wght" 450;
 }
 
 html[data-theme="dark"] .note .text-lg {
-
+margin-left: 14.5px;
 margin-top: 10px;
 margin-bottom: 10px;
 margin-right: 14px;
