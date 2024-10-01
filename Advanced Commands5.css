@@ -818,6 +818,7 @@ html[data-theme="light"] div[class~="caution"] {
   }
   .caution .ml-4.text-lg {
   margin-left: 0 !important;
+        margin-top: -17px;
   }
   
   .caution.admonitionblock{
