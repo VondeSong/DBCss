@@ -16,6 +16,7 @@ a[data-ref="$pink"],
 a[data-ref="$rose"],
 a[data-ref="$redtext"],
 a[data-ref="$bluetext"],
+a[data-ref="$greendeeptext"],
 a[data-ref="$greentext"],
 a[data-ref="$yetext"],
 a[data-ref="$bearbk"] {
@@ -165,6 +166,24 @@ html[data-theme="light"] span.page-reference:has(a[data-ref="$bluetext"])+mark {
 }
 
 html[data-theme="dark"] span.page-reference:has(a[data-ref="$bluetext"])+mark {
+  /*color: #2376b7 !important;*/
+  color: rgb(2, 129, 243) !important;
+  background-color: var(--ls-primary-background-color) !important;
+  padding: 0 !important;
+  /*font-weight: bold;*/
+  border: none !important;
+  box-shadow: none !important;
+}
+html[data-theme="light"] span.page-reference:has(a[data-ref="$greendeeptext"])+mark {
+  /*color: #2376b7 !important;*/
+  color: #0053b8 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-weight: bold;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] span.page-reference:has(a[data-ref="$greendeeptext"])+mark {
   /*color: #2376b7 !important;*/
   color: rgb(2, 129, 243) !important;
   background-color: var(--ls-primary-background-color) !important;
@@ -414,6 +433,7 @@ html[data-theme="dark"] span.page-reference:has(a[data-ref="$hatgray"])+mark .bl
 [data-ref="$redtext"] + mark  .page-ref,
 [data-ref="$redtext"] + mark  .page-ref,
 [data-ref="$bluetext"] + mark  .page-ref,
+[data-ref="$greendeeptext"] + mark  .page-ref,
 [data-ref="$greentext"] + mark  .page-ref,
 [data-ref="$yetext"] + mark  .page-ref,
 [data-ref="$bearbk"] + mark .page-ref
