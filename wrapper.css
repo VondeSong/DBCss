@@ -176,7 +176,9 @@ html[data-theme="dark"] span.page-reference:has(a[data-ref="$bluetext"])+mark {
 }
 html[data-theme="light"] span.page-reference:has(a[data-ref="$greendeeptext"])+mark {
   /*color: #2376b7 !important;*/
-  color: #0053b8 !important;
+  color: #0d825c !important;
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
   background-color: transparent !important;
   padding: 0 !important;
   font-weight: bold;
@@ -185,7 +187,9 @@ html[data-theme="light"] span.page-reference:has(a[data-ref="$greendeeptext"])+m
 
 html[data-theme="dark"] span.page-reference:has(a[data-ref="$greendeeptext"])+mark {
   /*color: #2376b7 !important;*/
-  color: rgb(2, 129, 243) !important;
+  color: #6effd7 !important;
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
   background-color: var(--ls-primary-background-color) !important;
   padding: 0 !important;
   /*font-weight: bold;*/
